@@ -1,0 +1,1589 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --gameplay: #656565;
+    --dark-gold: #B4A87F;
+    --gold: #D4BE6F;
+    --anemo: #2FD4D6;
+    --geo: #ECD693;
+    --electro: #BFA7FB;
+    --dendro: #AFF175;
+    --hydro: #37A6D7;
+    --pyro: #E55458;
+    --cryo: #A0C7F3;
+    --star: #44505C;
+    --card-modal: #C9C9C9;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-button {
+    height: 1px;
+    background-color: transparent;
+}
+
+.talents-text::-webkit-scrollbar {
+    width: 5px;
+}
+
+.talents-text::-webkit-scrollbar-track {
+    background-color: #ffffff51;
+}
+
+.talents-text::-webkit-scrollbar-thumb {
+    background-color: #313c4eae;
+}
+
+.talents-text::-webkit-scrollbar-thumb:hover {
+    background-color: #47556c;
+}
+
+.constellation-text-block::-webkit-scrollbar {
+    width: 5px;
+}
+
+.constellation-text-block::-webkit-scrollbar-track {
+    background-color: #ffffff51;
+}
+
+.constellation-text-block::-webkit-scrollbar-thumb {
+    background-color: #313c4eae;
+}
+
+.constellation-text-block::-webkit-scrollbar-thumb:hover {
+    background-color: #47556c;
+}
+
+@font-face {
+    font-family: "Genshin Impact";
+    src: url(/fonts/GenshinImpact.ttf);
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url(/fonts/Pacifico.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(/fonts/Inter.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Inter";
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+h1 {
+    margin: 30px 0 0 40px;
+    font-size: 80px;
+    font-family: "Pacifico";
+    font-weight: 400;
+}
+
+h2 {
+    margin: 30px 0 0 40px;
+    font-size: 25px;
+    font-family: "Genshin Impact";
+}
+
+h3 {
+    width: 1300px;
+    font-family: "Genshin Impact";
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3::before {
+    position: absolute;
+    left: 0;
+    width: 350px;
+    height: 5px;
+    border-radius: 10px;
+    content: '';
+}
+
+h3::after {
+    position: absolute;
+    right: 0;
+    width: 350px;
+    height: 5px;
+    border-radius: 10px;
+    content: '';
+}
+
+h4 {
+    font-family: "Genshin Impact";
+    font-size: 80px;
+    font-weight: 400;
+    padding: 25px 97px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    width: 1300px;
+}
+
+p {
+    margin: 0;
+}
+
+/* навігація */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    width: 1400px;
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Genshin Impact";
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    position: relative;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav span {
+    font-size: 25px;
+}
+
+.nav span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+.nav span:hover::after {
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    gap: 20px;
+}
+
+/* віджет архонта */
+
+.carousel {
+    position: relative;
+    display: flex;
+    width: 1380px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.carousel-button {
+    position: absolute;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    border: transparent;
+    top: 225px;
+}
+
+.carousel-button.left {
+    left: 0;
+} 
+
+.carousel-button.right {
+    right: 0;
+}
+
+.carousel-vidget {
+    border-radius: 70px 70px 0 0;
+    width: 1300px;
+    height: 500px;
+    position: absolute;
+    z-index: 3;
+}
+
+.carousel-vidget-text {
+    position: absolute;
+    z-index: 3;
+}
+
+.carousel-vidget p {
+    margin: 40px 0 0 40px;
+    width: 550px;
+    font-family: "Inter";
+}
+
+.img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    height: 600px;
+    width: 700px;
+}
+
+.ellipse-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 411px;
+    height: 212px;
+}
+
+.ellipse-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 405px;
+    height: 347px;
+}
+
+/* історія */
+
+#history-section h3 {
+    margin-top: 600px;
+}
+
+.history-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.history-section-block {
+    width: 1300px;
+    height: 300px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-person-block {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.history-person-block img {
+    height: 250px;
+    width: 250px;
+}
+
+.history-text {
+    width: 320px;
+    height: 220px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-text p {
+    margin: 0;
+}
+
+.history-symbol {
+    gap: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.history-symbol img {
+    height: 280px;
+    width: 280px;
+}
+
+.history-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.history-person {
+    height: 600px;
+    width: 600px;
+    color: #fff;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.history-person p {
+    font-weight: 400;
+    padding: 0 30px;
+}
+
+/* геймплей */
+
+.gameplay-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.gameplay-text {
+    margin: 0;
+    width: 1300px;
+}
+
+.gameplay-text span {
+    font-weight: 600;
+}
+
+.gameplay-video-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    color: var(--gameplay);
+}
+
+.gameplay-video {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.gameplay-video img {
+    margin: 25px 0;
+    width: 600px;
+}
+
+.gameplay-video video {
+    margin: 25px 0;
+    width: 600px;
+    height: 325px;
+    background-color: #000;
+}
+
+.gameplay-video p {
+    margin: 0;
+}
+
+/* піднесення */
+
+.ascensions-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.ascensions-section img {
+    width: 1300px;
+    height: 1106px;
+    border-radius: 10px;
+}
+
+.ascensions-text {
+    margin: 0;
+    width: 1300px;
+}
+
+/* таланти */
+
+.talents-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    gap: 50px;
+}
+
+.talents-section-img {
+    width: 880px;
+    height: 1510px;
+    border-radius: 10px;
+}
+
+.talents-section-block {
+    display: flex;
+    justify-content: center;
+}
+
+.talents-section-block-interactive {
+    width: 1300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: "Genshin Impact";
+    font-size: 15px;
+}
+
+.talents-left-section {
+    width: 350px;
+    height: 710px;
+    background: linear-gradient(180deg, rgba(38, 47, 62, 0.9) 31.3%, rgba(102, 102, 102, 0.5) 78.3%);
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+.talents-left-section p {
+    margin: 0;
+}
+
+.talents-left-section img {
+    margin: 10px 0;
+    height: 50px;
+    width: 50px;
+}
+
+.talents-left-text {
+    text-align: center;
+}
+
+.description {
+    border-radius: 25px;
+    border-color: transparent;
+    width: 300px;
+    height: 30px;
+    background-color: #fff;
+    color: var(--star);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 25px 0;
+}
+
+.talents-text {
+    width: 300px;
+    height: 445px;
+    overflow: auto;
+}
+
+.talents-list {
+    margin: 0;
+}
+
+.star-block {
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    margin: 25px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.string-b {
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 2px;
+    left: 0;
+    top: 10px;
+    background-color: var(--star);
+    border-radius: 10px;
+    color: transparent;
+}
+
+img.star {
+    position: absolute;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+}
+
+.string-a {
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 2px;
+    right: 0;
+    top: 10px;
+    background-color: var(--star);
+    border-radius: 10px;
+    color: transparent;
+}
+
+img.talents-intersctive-img {
+    height: 710px;
+    width: 1300px;
+}
+
+.talents-right-block {
+    width: 370px;
+    height: 375px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.talents-right-section {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+
+.talents-right-section img {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+
+.talents-right-section p {
+    margin-right: 20px;
+    width: 250px;
+    text-align: end;
+}
+
+.talents-right-section:hover {
+    width: 370px;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 16.61%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 87.98%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+
+.talents-right-section.active {
+    width: 370px;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 16.61%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 87.98%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+
+.talents-p {
+    margin: 0;
+    width: 1300px;
+    color: #000;
+}
+
+.dark-gold {
+    color: var(--dark-gold);
+}
+
+.gold {
+    color: var(--gold);
+}
+
+.anemo {
+    color: var(--anemo);
+}
+
+.geo {
+    color: var(--geo);
+}
+
+.electro {
+    color: var(--electro);
+}
+
+.dendro {
+    color: var(--dendro);
+}
+
+.hydro {
+    color: var(--hydro);
+}
+
+.pyro {
+    color: var(--pyro);
+}
+
+.cryo {
+    color: var(--cryo);
+}
+
+/* сузір'я */
+
+.constellation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.constellation-section-block {
+    display: flex;
+    justify-content: center;
+}
+
+.constellation-section-block-interactive {
+    width: 1300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: "Genshin Impact";
+    font-size: 15px;
+}
+
+.constellation-left-section {
+    width: 350px;
+    height: 730px;
+    background: linear-gradient(180deg, rgba(38, 47, 62, 0.9) 31.3%, rgba(102, 102, 102, 0.5) 78.3%);
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+.constellation-left-section-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.constellation-left-section img {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+}
+
+.star-block-top {
+    position: relative;
+    width: 300px;
+    height: 20px;
+    margin: 25px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.string-b {
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 2px;
+    left: 0;
+    top: 10px;
+    background-color: var(--star);
+    border-radius: 10px;
+    color: transparent;
+}
+
+.star-block-top img.star {
+    position: absolute;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+}
+
+.string-a {
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 2px;
+    right: 0;
+    top: 10px;
+    background-color: var(--star);
+    border-radius: 10px;
+    color: transparent;
+}
+
+.constellation-text {
+    width: 300px;
+}
+
+.constellation-text .dark-gold {
+    color: var(--dark-gold);
+    font-size: 20px;
+}
+
+.constellation-left-section p {
+    margin: 0;
+}
+
+.constellation-text p:nth-child(2) {
+    margin: 10px 0 30px 0;
+}
+
+.constellation-text-block {
+    width: 305px;
+    height: 375px;
+    overflow: auto;
+}
+
+.string {
+    width: 300px;
+    height: 2px;
+    background-color: var(--star);
+    border-radius: 10px;
+    color: transparent;
+    margin-top: 15px;
+}
+
+.star-block-bottom {
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    margin: 25px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.star-block-bottom img.star {
+    position: absolute;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+}
+
+.conselattion-section-img {
+    height: 730px;
+    width: 1300px;
+}
+
+.constellation-right-block {
+    width: 350px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 124px 55px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.constellation-right-section {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.constellation-right-section img {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+
+.constellation-right-section p {
+    margin-left: 20px;
+    width: 250px;
+}
+
+.constellation-right-section:nth-child(2) {
+    margin-left: 50px;
+}
+
+.constellation-right-section:nth-child(3) {
+    margin-left: 75px;
+}
+
+.constellation-right-section:nth-child(4) {
+    margin-left: 75px;
+}
+
+.constellation-right-section:nth-child(5) {
+    margin-left: 50px;
+}
+
+.constellation-right-section:hover {
+    height: 50px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(132, 132, 132, 0.1) 16.61%, rgba(255, 255, 255, 0.3) 50%, rgba(132, 132, 132, 0.1) 87.98%, rgba(255, 255, 255, 0) 100%);
+}
+
+.constellation-right-section.active {
+    height: 50px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(132, 132, 132, 0.1) 16.61%, rgba(255, 255, 255, 0.3) 50%, rgba(132, 132, 132, 0.1) 87.98%, rgba(255, 255, 255, 0) 100%);
+}
+.star-consellation img {
+    position: absolute;
+    height: 82px;
+    width: 82px;
+    transition: transform 0.3s ease;
+}
+
+.star-consellation img.active {
+    transform: scale(1.7);
+}
+
+/* картки */
+
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.cards-text {
+    margin: 0;
+    width: 1300px;
+}
+
+.genshin {
+    font-family: "Genshin Impact";
+}
+
+.cards-section-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.cards-section-block img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 600px;
+    width: 350px;
+}
+
+.cards-section-block img:hover {
+    transform: scale(1.1);
+}
+
+/* модальне вікно */
+
+.cards-section-block-modal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.5s ease;
+}
+
+.cards-section-block-modal.visible {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+}
+
+.cards-section-block-modal-mini {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.modal {
+    position: relative;
+    width: 1300px;
+    height: 665px;
+    border-radius: 20px;
+    font-family: "Genshin Impact";
+    color: #fff;
+    font-size: 15px;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.modal-block-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.block-modal {
+    width: 800px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-right: 35px;
+}
+
+.modal-block {
+    display: flex;
+}
+
+.modal-mini-block {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+
+.modal-mini-block img {
+    height: 100px;
+    width: 100px;
+}
+
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.modal-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-text p {
+    margin: 0;
+}
+
+.one {
+    font-size: 20px;
+}
+
+.two {
+    color: var(--card-modal);
+}
+
+.stuhiya {
+    display: flex;
+    gap: 10px;
+}
+
+.stuhiya img {
+    height: 33px;
+    width: 30px;
+}
+
+.fake {
+    color: transparent;
+    height: 1px;
+}
+
+.close-btn {
+    background: transparent;
+    border: transparent;
+    width: 15px;
+    height: 25px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* регіон */
+
+.region{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.region-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+}
+
+.region-section-block{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 675px;
+}
+
+.region-section-p {
+    margin: 0;
+    font-family: "Genshin Impact";
+    font-size: 70px;
+}
+
+.region-section-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.region-section-text p {
+    margin: 0;
+}
+
+.region-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.region-p {
+    font-family: "Genshin Impact";
+    font-size: 50px;
+    margin: 0;
+}
+
+.map {
+    border-radius: 20px;
+}
+
+.region-music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.region-music p {
+    margin: 0;
+}
+
+.region-music-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.spotify {
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+/* футер */
+
+footer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.footer::before {
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 120px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer::after {
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';
+    height: 120px;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 50px 150px;
+    z-index: 3;
+}
+
+.footer-first {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link-first {
+    color: #fff;
+    transition: color 0.4s ease;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    font-family: "Genshin Impact";
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    position: relative;
+}
+
+.footer-nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+.footer-nav a:hover::after {
+    width: 100%;
+}
+
+.footer-copyright {
+    font-size: 15px;
+    margin: 0;
+}
+
+.footer-second ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-second .link {
+    display: inline-block;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.footer-second .link:hover {
+    transform: scale(1.1);
+}
+
+.footer-third {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-third p {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.social-media {
+    position: relative;
+    display: inline-block;
+}
+
+.social-media::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+    background-color: #fff;
+}
+
+.social-media:hover::after {
+    width: 100%;
+}
+
+.social-media a {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+[data-animate] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate].show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+body.index {
+    background-image: url(/image/index/background.png);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main.index {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+
+.banner img {
+    width: 1000px;
+    height: 515px;
+}
+
+button.index {
+    width: 250px;
+    height: 50px;
+    border: solid #D2D2AF 3px;
+    background-color: #edecec;
+    border-radius: 40px;
+    margin-top: 25px;
+    transition: background-color 0.4s ease;
+}
+
+button.index:hover {
+    background-color: #fff;
+}
+
+button.index a {
+    color: #D2D2AF;
+    font-size: 20px;
+    font-family: "Genshin Impact";
+}
+
+/* сторінка про автора */
+
+body.autor {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1.autor {
+    color: #d33a6c;
+    margin: 0;
+    font-family: "Inter";
+    font-size: 80px;
+}
+
+h2.autor {
+    font-size: 30px;
+    color: #d33a6c;
+    font-family: "Inter";
+    margin: 0;
+}
+
+h3.autor {
+    font-family: "Inter";
+    width: auto;
+    font-size: 25px;
+    margin: 0;
+    text-transform: none;
+}
+
+body.autor h1,h2,h3,p,ul,li,a  {
+    z-index: 2;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-column {
+    width: 500px;
+    background-color: #E5C5CA;
+    color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.profile-photo {
+    margin-bottom: 25px;
+    z-index: 2;
+}
+
+.left-column div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.autor-contacts ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.autor-contacts .link {
+    display: inline-block;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.autor-contacts .link:hover {
+    transform: scale(1.1);
+}
+
+.right-column {
+    width: 900px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.right-column-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+}
+
+.right-column-second {
+    z-index: 2;
+}
+
+.right-column-third ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    z-index: 2;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-media-autor p {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.sm-image {
+    height: 50px;
+    width: 50px;
+}
+
+.social-media-autor {
+    position: relative;
+    display: inline-block;
+    width: 175px;
+    height: 50px;
+}
+
+.social-media-autor::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+    background-color: #fff;
+}
+
+.social-media-autor:hover::after {
+    width: 100%;
+}
+
+.social-media-autor a {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.snowflake {
+    position: absolute;
+    top: -50px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.back {
+    color: #333;
+}
+
+.back::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+    background-color: #333;
+}
+
+.back:hover::after {
+    width: 100%;
+}
