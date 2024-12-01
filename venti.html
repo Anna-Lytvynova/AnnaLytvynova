@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anna Lytvynova">
+    <meta name="keywords" content="Архонти, геншин, Genshin Impact, історія, геймплей, піднесення, таланти, сузір’я">
+    <meta name="description" content="Венті, Venti">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="./image/favicon.png" type="image/icon" class="icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/character-style.css">
+    <title>Венті</title>
+</head>
+<body class="venti">
+    <div class="video-container hidden" id="myBlock">
+        <video autoplay muted playsinline>
+            <source src="./image/animation.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео.
+        </video>
+    </div>
+    <style>
+    ::-webkit-scrollbar-thumb {
+    background-color: var(--nav-text-venti);
+    border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--anemo);
+    }
+    ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: var(--nav-block-venti);
+    }
+    </style>
+    <header data-animate="fade-in">
+        <!-- навігація -->
+        <nav class="nav venti">
+            <a href="./index.html"><span>архонти</span></a>
+            <ul>
+                <li><a href="#history-section">історія</a></li>
+                <li><a href="#gameplay-section">геймплей</a></li>
+                <li><a href="#ascensions-section">піднесення</a></li>
+                <li><a href="#talents-section">таланти</a></li>
+                <li><a href="#constellation-section">сузір'я</a></li>
+                <li><a href="#cards-section">картки</a></li>
+                <li><a href="#region-section">регіон</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- віджет з архонтом -->
+        <div data-animate="fade-in" class="carousel">
+            <button class="carousel-button left venti" type="button">
+                <a href="./furina.html">
+                    <svg width="20" height="50">
+                        <use href="./image/icons.svg#icon-arrow-left"></use>
+                    </svg>
+                </a>
+            </button>
+            <div class="carousel-vidget venti">
+                <div class="carousel-vidget-text">
+                    <h1>Венті</h1>
+                    <h2>Анемо архонт та бог свободи.</h2>
+                    <p>
+                        Бард, який, здається, прилетів на якомусь невідомому вітрі, – то співає пісні старі, як заміські пагорби, то
+                        іноді декламує свіжі вірші. Любить яблука та жваві місця, але не долюбляє сир чи щось липке. Коли він
+                        послуговується
+                        своєю силою Анемо, щоб контролювати вітер, то часто вона виглядає як справжнісіньке пір’я, оскільки Венті
+                        любить
+                        те, що здається легким і подібним до вітерця.
+                    </p>
+                </div>
+                <img class="img" src="./image/venti/carousel/venti.png" alt="Венті">
+                <img class="ellipse-left" src="./image/venti/carousel/Ellipse1.png" alt="ліве коло">
+                <img class="ellipse-right" src="./image/venti/carousel/Ellipse2.png" alt="праве коло">
+            </div>
+            <button class="carousel-button right venti" type="button">
+                <a href="./zhongli.html">
+                    <svg width="20" height="50">
+                        <use href="./image/icons.svg#icon-arrow-right"></use>
+                    </svg>
+                </a>
+            </button>
+        </div>
+        <div>
+            <!-- історія -->
+            <section data-animate="fade-in" id="history-section">
+                <h3 class="venti-h3">історія</h3>
+                <div class="history-section">
+                    <div data-animate="fade-in" class="history-section-block">
+                        <div class="history-person-block">
+                            <img src="./image/venti/history/icon.png" alt="іконка Венті" width="250px" height="250px">
+                            <div class="history-text venti">
+                                <p>
+                                    Людське ім’я: Венті
+                                    <br>Божествене ім’я: Барбатос
+                                    <br>Бог: Свободи
+                                    <br>Стихія: Анемо
+                                    <br>Регіон: Мондтштат
+                                    <br>Рідкість: 5 зірок
+                                    <br>Зброя: Лук
+                                    <br>День народження: 16 червня
+                                </p>
+                            </div>
+                        </div>
+                        <div class="history-symbol">
+                            <img src="./image/venti/history/elemental-symbol.png" alt="анемо символ" width="280px" height="280px">
+                            <img src="./image/venti/history/region-logo.png" alt="логотип мондтштату" width="280px" height="280px">
+                        </div>
+                    </div>
+                    <div class="history-block">
+                        <div data-animate="fade-in" class="history-person venti">
+                            <h4>Історія 1</h4>
+                            <p>
+                                Венті оселився в Мондштадті зовсім недавно, і його заробіток був набагато нижчим від інших бардів-мондштадтців. Але
+                                побачивши достатню суму в горщику, будьте впевнені, Венті витратить її в найближчій таверні.
+                                <br>
+                                <br>
+                                Але неповнолітній вигляд Венті не дозволяє йому купити алкоголь.
+                                <br>
+                                <br>
+                                Коли йому відмовили вперше, Венті тільки пробурмотів щось на кшталт: «А ось раніше таких правил не було...» Але коли він
+                                дізнався, що таке правило встановлено у всіх тавернах міста, Венті придумав новий план...
+                                <br>
+                                <br>
+                                Замість того, щоб просити за свої виступи мору, Венті затискав у зубах келих одночасно граючи на лірі та просив своїх
+                                глядачів підливати йому вино.
+                                <br>
+                                <br>
+                                Такі нововведення додали йому популярності у Мондштадті.
+                                <br>
+                                <br>
+                                Однак головною причиною зривів виступів була його алергія на котів.
+                                <br>
+                                <br>
+                                Він починав шалено чхати навіть за одного їхнього вигляду і сподівався, що поряд не проходитиме кішки, коли він
+                                виступатиме із затиснутим у зубах келихом вина.
+                                <br>
+                                <br>
+                                Тому Венті для своїх виступів обирає місця подалі від пухнастих, але якимось чином безпритульні коти тягнуться до нього
+                                навіть з інших куточків міста.
+                            </p>
+                        </div>
+                        <div data-animate="fade-in" class="history-person venti">
+                            <h4>Історія 2</h4>
+                            <p>
+                                У центрі долини Вітрів височить величезний дуб, який, згідно з легендою, був посаджений Веннесою, яка давним-давно
+                                піднялася на Селестію.
+                                <br>
+                                <br>
+                                Вже кілька місяців відпочиваючі біля дуба мандрівники чують хлопчика, який співає легенди про Анемо Архонта Барбатоса.
+                                <br>
+                                <br>
+                                На відміну від більшості інших Архонтів, правлячих сусідніми королівствами, Барбатос давно залишив Мондштадт. Все, що
+                                залишилося від нього, - статуї, що лише віддалено його нагадують. Але на щастя, його попередні дії збереглися в книгах
+                                та епічних баладах, поколіннями оспівуваних бардами.
+                                <br>
+                                <br>
+                                Однак на відміну від канонічних творів, що розповідають про подвиги Архонта, Венті співає про Барбатоса дещо інші речі.
+                                Найчастіше його пісні розповідають про дивні пригоди та пустоту.
+                                <br>
+                                <br>
+                                Наприклад, він розповідає, як Барбатос одного разу вкрав скіпетр Кріо Архонта, підмінивши його кийком хилічурла.
+                                <br>
+                                <br>
+                                Це дуже зачіпає віруючих в Архонта городян, але, зіштовхуючись із звинуваченнями, Венті відповідає безсоромно: «Звідки
+                                вам знати, правда це чи ні?»
+                                <br>
+                                <br>
+                                І з цим не можна сперечатися, адже навіть посвяченим сестрам не відомо, що насправді відбувалося з Барбатосом
+                                тисячоліття тому. І за загадковою усмішкою Венті приховує правду про те, що всі його байки – вигадка. Але хіба можна
+                                звинувачувати його за ту музу, що приходить після кількох келихів вина?
+                            </p>
+                        </div>
+                        <div data-animate="fade-in" class="history-person venti">
+                            <h4>Історія 3</h4>
+                            <p>
+                                Близько двох тисяч шістсот років тому ще гриміли Війни Архонтів, а семи архонтам тільки належало встановити свою владу
+                                над світом.
+                                <br>
+                                <br>
+                                У ті часи місто під назвою Мондштадт оточували урагани, непереборні навіть птахам. Нескінченний вітер перемелював міську
+                                землю та каміння у найдрібніший пил.
+                                <br>
+                                <br>
+                                Владика вітру, Бог бурі Декарабіан, сидів у своїй вежі. З презирством дивився він на своїх підлеглих, які згиналися від
+                                нескінченного вітру, і тішився їхньою видимою покірністю.
+                                <br>
+                                <br>
+                                Венті тоді був лише пилинкою серед вітрів, що ревуть над землями півночі.
+                                <br>
+                                <br>
+                                Той, кого пізніше величатимуть Барбатосом, був дрібним елементалем без натяку на божественну велич, вітерцем, який
+                                приносив ледь помітні зміни на краще чи крихітне насіння надії.
+                                <br>
+                                <br>
+                                У стародавньому Мондштадті Венті зустрів юнака. Юнак той грав на лірі і жадав писати найкращі вірші.
+                                <br>
+                                <br>
+                                "Я так мрію побачити птахів".
+                                <br>
+                                <br>
+                                Мовив він, народжений у стінах вітру, через які не видно було ні синього неба, ні орлів, ні зеленої трави. Слова його
+                                заглушало виття вітру.
+                                <br>
+                                <br>
+                                «Чому б тобі не піти зі мною, друже?»
+                            </p>
+                        </div>
+                        <div data-animate="fade-in" class="history-person venti">
+                            <h4>Історія 4</h4>
+                            <p>
+                                Для юнака, який народився в охопленому вітрами місті і ніколи не бачив птахів, елементаль Венті здобув орлине перо.
+                                <br>
+                                <br>
+                                Пізніше у Мондштадті вибухнула війна за свободу.
+                                <br>
+                                <br>
+                                З пером за пазухою Венті разом з другом спостерігав, як у диму повстання норовливому тирану приходить кінець.
+                                <br>
+                                <br>
+                                Імператор вважав, що захистив своїх підданих від холодів, і йому здавалося, що вони любили його не менше, ніж той любив
+                                їх.
+                                <br>
+                                <br>
+                                Але навіть після перемоги Венті віддати юнакові перо не зміг, адже він загинув у боротьбі за пісні, небо, птахів та
+                                людей, що жили у стінах із ураганів.
+                                <br>
+                                <br>
+                                З падінням старого божественного трону народився новий бог. Анемо Архонт Барбатос відчував, як сила переливається на
+                                кінчиках його пальців.
+                                <br>
+                                <br>
+                                За допомогою цієї сили він насамперед переродився на вигляд того юнака.
+                                <br>
+                                <br>
+                                Адже на лірі, яку юнак так любив, грати він міг лише набравши форми людини.
+                                <br>
+                                <br>
+                                Перебираючи струни, він божественним вітром розігнав лід зі снігом і розколив гори.
+                                <br>
+                                <br>
+                                Новому Мондштадту він наказав стати містом свободи, країною без короля.
+                                <br>
+                                <br>
+                                Згодом він стане прекрасним, повним романтики містом.
+                                <br>
+                                <br>
+                                "Йому теж хотілося б жити в такому місці".
+                                <br>
+                                <br>
+                                Так для Мондштадта розпочалася нова епоха.я
+                            </p>
+                        </div>
+                        <div data-animate="fade-in" class="history-person venti">
+                            <h4>Історія 5</h4>
+                            <p>
+                                Не все у Мондштадті створено Анемо Архонтом.
+                                <br>
+                                <br>
+                                Зараз я звеличу похвалу про те, як прекрасно все суще...
+                                <br>
+                                <br>
+                                Хвала західному вітру за вічну ласку,
+                                <br>
+                                <br>
+                                Квітам за прекрасну весняну казку,
+                                <br>
+                                <br>
+                                Зяблики, качки, кролі, кабани,
+                                <br>
+                                <br>
+                                Рівнини Мондштадта, що життя сповнені.
+                                <br>
+                                <br>
+                                Бродить лев серед зелених лугів,
+                                <br>
+                                <br>
+                                Такий він красень, що інших нема слів.
+                                <br>
+                                <br>
+                                Гаряча грива сонця видна,
+                                <br>
+                                <br>
+                                Тому така приємна прохолода вина.
+                                <br>
+                                <br>
+                                Тонка стежка між гір шкутильгає,
+                                <br>
+                                <br>
+                                Нею вітер східний не ходить - літає.
+                                <br>
+                                <br>
+                                Полями, садами він низько пройде,
+                                <br>
+                                <br>
+                                Паху фруктів він нам принесе.
+                                <br>
+                                <br>
+                                Північний вітер спить у лісі,
+                                <br>
+                                <br>
+                                А сірі вовки ходять унизі.
+                                <br>
+                                <br>
+                                Анемо Архонту відомо, що він
+                                <br>
+                                <br>
+                                Побачить чудових, лагідних снів.
+                                <br>
+                                <br>
+                                Пори року один за одним йдуть,
+                                <br>
+                                <br>
+                                І ці вітри ніколи не помруть.
+                                <br>
+                                <br>
+                                Головна роль у цій пісні – моя,
+                                <br>
+                                <br>
+                                Адже хто її заспівав би, якби не я?
+                            </p>
+                        </div>
+                        <div data-animate="fade-in" class="history-person venti">
+                            <h4>Історія 6</h4>
+                            <p>
+                                Через тисячу шістсот років після заснування свобода з Мондштадта майже зникла.
+                                <br>
+                                <br>
+                                Барбатос, не бажаючи ставати тираном, пішов. Але він уявити не міг, що наділені свободою люди створять собі тирана самі.
+                                <br>
+                                <br>
+                                Жорстокі, глухі до криків пригноблених аристократи, які правили Мондштадтом, принесли на цю землю рабство.
+                                <br>
+                                <br>
+                                Через тисячу шістсот років Анемо Архонт повернувся до колишнього Міста Свободи. Він почув крики рабині Веннеси, і разом
+                                вони почали повстання, що повалило аристократів.
+                                <br>
+                                <br>
+                                Все сказане вище - кожному знайома офіційна історія Мондштадта.
+                                <br>
+                                <br>
+                                Але про один невеликий, але вкрай цікавий епізод майже нікому не відомо.
+                                <br>
+                                <br>
+                                Людей у ​​боротьбі за Мондштадт і справді об'єднала Веннесса, але багато солдатів повстали проти аристократів через
+                                «Змову проти вітру».
+                                <br>
+                                <br>
+                                За цією зрадницькою угодою правляча аристократія зрікалася вітру і продавала все в Мондштадті Гео Архонту з сусіднього
+                                королівства.
+                                <br>
+                                <br>
+                                Скріплювала її печатку, яку не могло вигравірувати жодне божество, крім Володаря Каменя.
+                                <br>
+                                <br>
+                                Пригноблених рабів солдатів тремтіло від думки, що їм уготована доля невільників на чужій землі.
+                                <br>
+                                <br>
+                                Звістка про це, а також конфлікт, поширилися подібно до степової пожежі, яка поглинула аристократію. Лише через багато
+                                років історики виявили, що угода ця була несправжньою.
+                                <br>
+                                <br>
+                                Виявилося, що Венті хотів розіграти Гео Архонта, і тому вправлявся підробляти підписи, але провести бога торгівлі та
+                                багатства так і не зумів. Проте його марна майстерність нарешті проявила себе за кілька сотень років.
+                                <br>
+                                <br>
+                                Який втішний збіг.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- геймплей -->
+            <section data-animate="fade-in" id="gameplay-section">
+                <h3 class="venti-h3">геймплей</h3>
+                <div class="gameplay-section">
+                    <p data-animate="fade-in" class="gameplay-text">
+                        Венті вважається Саб ДД. Він грає за рахунок елементальної реакції Розсіювання. Незважаючи на те, що Венті – лучник,
+                        його основна шкода укладена не у звичайних атаках, а в скілах. <span class="venti">Елементальна навичка</span> Архонта здатна
+                        підкидати ворогів у повітря, а також створювати повітряний потік, який корисний при дослідженні світу. <span class="venti">Вибух
+                        стихій</span> Венті стягує супротивників у купу, поглинає інші елементи і завдає постійної шкоди відповідної стихії.
+                    </p>
+                    <div class="gameplay-video-block">
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/venti/gameplay/normal-attack.webp" alt="Звичайна атака">
+                            <p>Звичайна атака</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/venti/gameplay/charged-attack.webp" alt="Заряджена атака">
+                            <p>Заряджена атака</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/venti/gameplay/plunging-attack.webp" alt="Атака в падіні">
+                            <p>Атака в падіні</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/venti/gameplay/elemental-attack-quick-press.webp" alt="Елементальна навичка(швидкий натиск)">
+                            <p>Елементальна навичка(швидкий натиск)</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/venti/gameplay/elemental-attack-long-press.webp" alt="Елементальна навичка(довгий натиск)">
+                            <p>Елементальна навичка(довгий натиск)</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/venti/gameplay/elemental-burst.webp" alt="Вибух стихій">
+                            <p>Вибух стихій</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <video src="./image/venti/gameplay/animation1.mp4" loop muted autoplay></video>
+                            <p>Анімація очікування</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <video src="./image/venti/gameplay/animation2.mp4" loop muted autoplay></video>
+                            <p>Анімація очікування</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- піднесення -->
+            <section data-animate="fade-in" id="ascensions-section">
+                <h3 class="venti-h3">піднесення</h3>
+                <div class="ascensions-section">
+                    <p data-animate="fade-in" class="ascensions-text">
+                        Для піднесення Венті вам необхідно зібрати квітки Сесілії, котрі можна знайти на скелі Зірколова, або їх можна
+                        виростити
+                        у чайнику. Також вам знадобиться слиз слайма який випадає з елементальних слаймів. Знайти їх не є проблемою, адже
+                        вони
+                        знаходяться всюди у всіх регіонах. Обов’язковою складовою піднесення є насіння буревія. Його ви можете отримати, при
+                        перемозі над босом — Анемо гіпостазисом. Звідти ж є шанс випасти камню бірюзи Вайюда, котри також є необхідним для
+                        піднесення Венті.
+                    </p>
+                    <img data-animate="fade-in" src="./image/venti/ascensions/Upgrate.png" alt="піднесення">
+                </div>
+            </section>
+
+            <!-- таланти -->
+            <section data-animate="fade-in" id="talents-section">
+                <h3 class="venti-h3">таланти</h3>
+                <div class="talents-section">
+                    <div data-animate="fade-in" class="talents-section-block">
+                        <div class="talents-section-block-interactive">
+                            <div class="talents-left-block">
+                                <div class="talents-left-section hidden-block" id="hiddenBlock1">
+                                    <p class="dark-gold">Боєвий талант</p>
+                                    <img src="./image/venti/talents/talent1.png" alt="Божественна стрільба з лука">
+                                    <p class="dark-gold">Божественна стрільба з лука</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <p class="talents-text">
+                                        <span class="gold">Звичайна атака:</span>
+                                        <br>Виконує до 6 послідовних пострілів з лука.
+                                        <br><br>
+                                        <span class="gold">Заряджена атака:</span>
+                                        <br>Відтворює більш точний прицільний вистріл з підвищеним рівнем шкоди.
+                                        При прицілюванні сприятливі вітри акумулюються на вістрі стріли. Повністю заряджена вітрами стріла
+                                        завдаватиме
+                                        <span class="anemo">Анемо шкоду</span>.
+                                        <br><br>
+                                        <span class="gold">Атака в падінні:</span>
+                                        <br>Перш ніж впасти на землю, випускає дощ зі стріл та при зіткненні завдає демеджу по площі.
+                                    </p>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                                <div class="talents-left-section hidden-block" id="hiddenBlock2">
+                                    <p class="dark-gold">Боєвий талант</p>
+                                    <img src="./image/venti/talents/talent2.png" alt="Пісня піднебесся">
+                                    <p class="dark-gold">Пісня піднебесся</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <p class="talents-text">
+                                        О вітре, що на тобі витають всі гімни й пісні, піднеси цих землехідців високо в небеса!
+                                        <br><br>
+                                        <span class="gold">Звичайне натискання:</span>
+                                        <br>Створює Вітряну область на місцеперебуванні опонентів, завдаючи <span class="anemo">Анемо шкоди по
+                                            площі</span> та підкидаючи супротивників у
+                                        повітря.
+                                        <br><br>
+                                        <span class="gold">Довге натискання:</span>
+                                        <br>Викликає навіть більшу Вітряну область, в епіцентрі якої знаходиться сам Венті, завдаючи <span
+                                            class="anemo">Анемо шкоди по площі</span> та
+                                        підкидаючи опонентів у повітря.
+                                        Після вивільнення цієї версії навички, Венті сідлає повітря й теж підіймається в небо.
+                                        <br><br>
+                                        Супротивники, вражені Піснею Піднебесся падатимуть до землі повільно.
+                                    </p>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                                <div class="talents-left-section hidden-block" id="hiddenBlock3">
+                                    <p class="dark-gold">Боєвий талант</p>
+                                    <img src="./image/venti/talents/talent3.png" alt="Ода Анемо Архонта">
+                                    <p class="dark-gold">Ода Анемо Архонта</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <p class="talents-text">
+                                        Випускає стрілу, створену зі злиття незлічених вітрів, що формує величезне Око Шторму, що затягує
+                                        супротивників та
+                                        безперервно завдає <span class="anemo">Анемо шкоди</span>.
+                                        <br><br>
+                                        <span class="gold">Елементальне поглинання:</span>
+                                        <br>Якщо Око Шторму вступить в контакт з <span class="hydro">Гідро</span>/<span
+                                            class="pyro">Піро</span>/<span class="cryo">Кріо</span>/<span class="electro">Електро</span>, воно
+                                        завдаватиме додаткового Елементальної шкоди цього
+                                        типу.
+                                        Поглинання стихій може виникнути лише раз за застосування навички.
+                                    </p>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                                <div class="talents-left-section hidden-block" id="hiddenBlock4">
+                                    <p class="dark-gold">Пасивний талант</p>
+                                    <img src="./image/venti/talents/talent4.png" alt="Обійми залишків вітру">
+                                    <p class="dark-gold">Обійми залишків вітру</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <p class="talents-text">
+                                        Довге натискання <span class="gold">Пісні піднебесся</span> створюватиме висхідний потік, що триватиме
+                                        20 секунд.
+                                    </p>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                                <div class="talents-left-section hidden-block" id="hiddenBlock5">
+                                    <p class="dark-gold">Пасивний талант</p>
+                                    <img src="./image/venti/talents/talent5.png" alt="Око Шторму">
+                                    <p class="dark-gold">Око Шторму</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <p class="talents-text">
+                                        Відновлює 15 одиниць Енергії Венті після завершення дії <span class="gold">Оди Анемо Архонта</span>.
+                                        Якщо виникло Елементальне поглинання, то
+                                        відновляться також 15 одиниць Енергії тих персонажів, чия стихія відповідає поглиненій.
+                                    </p>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                                <div class="talents-left-section hidden-block" id="hiddenBlock6">
+                                    <p class="dark-gold">Пасивний талант</p>
+                                    <img src="./image/venti/talents/talent6.png" alt="Супровід незмінного вітру">
+                                    <p class="dark-gold">Супровід незмінного вітру</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <p class="talents-text">
+                                        Зменшує споживання витривалості під час планерування на 20% для учасників вашої команди. Не складається
+                                        в стеки з іншими
+                                        пасивними талантами з аналогічним ефектом.
+                                    </p>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="talents-intersctive-img" src="./image/venti/talents/talent-bg.png" alt="таланти">
+                            <div class="talents-right-block">
+                                <div class="talents-right-section block" id="block1">
+                                    <p>Божественна стрільба з лука</p>
+                                    <img src="./image/venti/talents/talent1.png" alt="Божественна стрільба з лука">
+                                </div>
+                                <div class="talents-right-section block" id="block2">
+                                    <p>Пісня піднебесся</p>
+                                    <img src="./image/venti/talents/talent2.png" alt="Пісня піднебесся">
+                                </div>
+                                <div class="talents-right-section block" id="block3">
+                                    <p>Ода Анемо Архонта</p>
+                                    <img src="./image/venti/talents/talent3.png" alt="Ода Анемо Архонта">
+                                </div>
+                                <div class="talents-right-section block" id="block4">
+                                    <p>Обійми залишків вітру</p>
+                                    <img src="./image/venti/talents/talent4.png" alt="Обійми залишків вітру">
+                                </div>
+                                <div class="talents-right-section block" id="block5">
+                                    <p>Око Шторму</p>
+                                    <img src="./image/venti/talents/talent5.png" alt="Око Шторму">
+                                </div>
+                                <div class="talents-right-section block" id="block6">
+                                    <p>Супровід незмінного вітру</p>
+                                    <img src="./image/venti/talents/talent6.png" alt="Супровід незмінного вітру">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p data-animate="fade-in" class="talents-p">
+                        Для покращення талантів вам знадобиться книги про “Поезію”, які можна добути у Забутому каньйоні в СР/СБ/НД.
+                        Починаючи з
+                        7 рівня вам необхідно зібрати Хвіст Борею. Його можна отримати після перемоги над щотижневим босом Лупуса-Бореаліса,
+                        який знаходиться в Мондтштаті у Вольфендомі. Щоб підвищити талант до найвищого 10 рівня вам необхідно мати Корону
+                        Прозріння. ЇЇ можна отримати під час івентів або із завдань деяких ігрових режимів.
+                    </p>
+                    <img data-animate="fade-in" class="talents-section-img" src="./image/venti/talents/upgrade.png" alt="покращення талантів">
+                </div>
+            </section>
+
+            <!-- сузір'я -->
+            <section data-animate="fade-in" id="constellation-section">
+                <h3 class="venti-h3">сузір'я</h3>
+                <div data-animate="fade-in">
+                    <div class="constellation-section">
+                        <div class="constellation-section-block">
+                            <div class="constellation-section-block-interactive">
+                                <div class="constellation-left-block">
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock7">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/venti/constellation/consellation1.png" alt="Розколення бурі">
+                                            <div class="star-block-top">
+                                                <div class="string-b">1</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Розколення бурі</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">1</span></p>
+                                            <p>
+                                                При <span class="gold">прицільному вистрілі</span> запускає дві додаткові стріли, кожна завдає по 33% первинної шкоди
+                                                стріли.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock8">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/venti/constellation/consellation2.png" alt="Подих спогадів">
+                                            <div class="star-block-top">
+                                                <div class="string-b">.</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">.</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Подих спогадів</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">2</span></p>
+                                            <p>
+                                                <span class="gold">Пісня піднебесся</span> зменшує рівень <span class="anemo">Анемо</span> та Фізичного опору супротивників на 12% протягом 10 секунд. Поки опоненти, що були
+                                                підкинуті Піснею піднебесся, знаходяться в повітрі, їх <span class="anemo">Анемо</span> та Фізичний супротив зменшується ще на 12%.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock9">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/venti/constellation/consellation3.png" alt="Поема тисячі вітрів">
+                                            <div class="star-block-top">
+                                                <div class="string-b">.</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">.</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Поема тисячі вітрів</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">3</span></p>
+                                            <p>
+                                                Збільшує рівень навички <span class="gold">Ода Анемо Архонта</span> на 3.
+                                                <br>Максимальний можливий рівень – 15.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock10">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/venti/constellation/consellation4.png" alt="Морозний вітер свободи">
+                                            <div class="star-block-top">
+                                                <div class="string-b">.</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">.</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Морозний вітер свободи</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">4</span></p>
+                                            <p>
+                                                Коли Венті підбирає Елементальну частинку чи сферу, він отримує 25% <span class="anemo">Бонусу Анемо шкоди</span> на 10 секунд.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock11">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/venti/constellation/consellation5.png" alt="Буревій опору">
+                                            <div class="star-block-top">
+                                                <div class="string-b">.</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">.</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Буревій опору</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">5</span></p>
+                                            <p>
+                                                Збільшує рівень навички <span class="gold">Пісня піднебесся</span> на 3.
+                                                <br>Максимальний можливий рівень – 15.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock12">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/venti/constellation/consellation6.png" alt="Концерт високого неба">
+                                            <div class="star-block-top">
+                                                <div class="string-b">.</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">.</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Концерт високого неба</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">6</span></p>
+                                            <p>
+                                                <span class="anemo">Анемо опір</span> тих цілей, що були уражені <span class="gold">Одою Анемо Архонта</span>, зменшується на 20%. Якщо виникло Елементальне поглинання, то
+                                                також на 20% буде зменшено опір відповідного Елемента.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="conselattion-section-img" src="./image/venti/constellation/consellation-bg.png" alt="сузір’я">
+                                <div class="constellation-right-block">
+                                    <div class="constellation-right-section block" id="block7">
+                                        <img src="./image/venti/constellation/consellation1.png" alt="Розколення бурі">
+                                        <p>Розколення бурі</p>
+                                    </div>
+                                    <div class="constellation-right-section block" id="block8">
+                                        <img src="./image/venti/constellation/consellation2.png" alt="Подих спогадів">
+                                        <p>Подих спогадів</p>
+                                    </div>
+                                    <div class="constellation-right-section block" id="block9">
+                                        <img src="./image/venti/constellation/consellation3.png" alt="Поема тисячі вітрів">
+                                        <p>Поема тисячі вітрів</p>
+                                    </div>
+                                    <div class="constellation-right-section block" id="block10">
+                                        <img src="./image/venti/constellation/consellation4.png" alt="Морозний вітер свободи">
+                                        <p>Морозний вітер свободи</p>
+                                    </div>
+                                    <div class="constellation-right-section block" id="block11">
+                                        <img src="./image/venti/constellation/consellation5.png" alt="Буревій опору">
+                                        <p>Буревій опору</p>
+                                    </div>
+                                    <div class="constellation-right-section block" id="block12">
+                                        <img src="./image/venti/constellation/consellation6.png" alt="Концерт високого неба">
+                                        <p>Концерт високого неба</p>
+                                    </div>
+                                </div>
+                                <div class="star-consellation venti">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock7">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock8">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock9">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock10">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock11">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- картки -->
+            <section data-animate="fade-in" id="cards-section">
+                <h3 class="venti-h3">картки</h3>
+                <div class="cards-section">
+                    <p data-animate="fade-in" class="cards-text">
+                        «Священний заклик сімох» – постійний ігровий режим, доданий у версії 3.3. Він є покроковою колекційною картковою
+                        грою на
+                        двох, заснованою на механіках <span class="genshin">Genshin Impact</span>. Мета гри - зібрати власну карткову колоду
+                        і перемогти в поєдинку, здолавши
+                        всіх персонажів супротивника. Гравці можуть запрошувати зіграти партію деяких ігрових та неігрових персонажів, а
+                        також
+                        грати проти інших мандрівників, проте нагород за PvP-дуелі не передбачено.
+                        Гравці можуть розблокувати навчальне завдання Приходьте зіграти у Священний заклик сімох після досягнення Рангу
+                        пригод
+                        32 та завершення завдання Архонтів Пролог. Глава III: Пісня про драконову свободу.
+                    </p>
+                    <div class="cards-section-block">
+                        <img data-animate="fade-in" src="./image/venti/cards/card1.png" alt="картка" class="openModalBtn" data-modal="modal1">
+                        <img data-animate="fade-in" src="./image/venti/cards/card2.png" alt="картка" class="openModalBtn" data-modal="modal2">
+                        <img data-animate="fade-in" src="./image/venti/cards/card3.png" alt="картка" class="openModalBtn" data-modal="modal3">
+                        <img data-animate="fade-in" src="./image/venti/cards/card4.png" alt="картка" class="openModalBtn" data-modal="modal4">
+                        <img data-animate="fade-in" src="./image/venti/cards/card5.png" alt="картка" class="openModalBtn" data-modal="modal5">
+                        <img data-animate="fade-in" src="./image/venti/cards/card6.png" alt="картка" class="openModalBtn" data-modal="modal6">
+                    </div>
+                </div>
+            </section>
+
+            <!-- модальні вікна -->
+            <section id="modal">
+                <div class="cards-section-block-modal venti" id="modal1">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal venti">
+                            <div class="modal-block-left">
+                                <div class="block-modal venti">
+                                    <div class="modal-block">
+                                        <div class="modal-mini-block venti">
+                                            <img src="./image/venti/cards/modal1.png" alt="Божественна стрільба з лука">
+                                        </div>
+                                        <div class="modal-text">
+                                            <div class="modal-text-block">
+                                                <p class="one">Божественна стрільба з лука</p>
+                                                <p class="two">Звичайна атака</p>
+                                                <p>Завдає 2 од. Фізичного шкоди.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stuhiya">
+                                        <img src="./image/venti/cards/anemo1.png" alt="анемо стихія">
+                                        <img src="./image/stuhiya-nichogo2.png" alt="стихія нічого">
+                                    </div>
+                                </div>
+                                <div class="block-modal venti">
+                                    <div class="modal-block">
+                                        <div class="modal-mini-block venti">
+                                            <img src="./image/venti/cards/modal2.png" alt="Пісня піднебесся">
+                                        </div>
+                                        <div class="modal-text">
+                                            <div class="modal-text-block">
+                                                <p class="one">Пісня піднебесся</p>
+                                                <p class="two">Елементальна навичка</p>
+                                                <p>Завдає 2 од. Анемо шкоду, викликає Вітряну область</p>
+                                            </div>
+                                            <div class="modal-text-block">
+                                                <p class="one">Вітряна область</p>
+                                                <p>
+                                                    Під час зміни персонажів: Витрачає на 1 Елементальний дайс менше.
+                                                    <br>Зарядів: 2
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stuhiya">
+                                        <img src="./image/venti/cards/anemo3.png" alt="анемо стихія">
+                                    </div>
+                                </div>
+                                <div class="block-modal venti">
+                                    <div class="modal-block">
+                                        <div class="modal-mini-block venti"><img src="./image/venti/cards/modal3.png" alt="Ода Анемо Архонта">
+                                        </div>
+                                        <div class="modal-text">
+                                            <div class="modal-text-block">
+                                                <p class="one">Ода Анемо Архонта</p>
+                                                <p class="two">Вибух Стихій</p>
+                                                <p>Завдає 2 од. Анемо шкоди, викликає Око Шторму.</p>
+                                            </div>
+                                            <div class="modal-text-block">
+                                                <p class="one">Око Шторму</p>
+                                                <p>
+                                                    Наприкінці раунду завдає 2 од. Анемо Демеджу, у вашого супротивника змінюється
+                                                    активний персонаж на того, що поблизу.
+                                                    <br>Зарядів: 2
+                                                </p>
+                                            </div>
+                                            <div class="modal-text-block">
+                                                <p>
+                                                    Після того як персонаж або Посіпака спричиняють реакцію Розсіювання, то
+                                                    Елементальний
+                                                    тип цієї карти конвертується та отриманий нею демедж змінюється на елемент
+                                                    Розсіювання. (Конвертується лише раз перед тим як покинути поле)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stuhiya">
+                                        <img src="./image/venti/cards/anemo3.png" alt="стихія анемо">
+                                        <img src="./image/energi2.png" alt="енергія">
+                                    </div>
+                                </div>
+                                <div class="fake">.</div>
+                            </div>
+                            <img src="./image/venti/cards/card1-modal.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section-block-modal venti" id="modal2">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal venti">
+                            <div class="modal-block-left">
+                                <div class="block-modal venti">
+                                    <div class="modal-block">
+                                        <div class="modal-text-block">
+                                            <p>
+                                                Бойова дія: Коли ваш активний персонаж — Венті, використайте цю картку. Після того, як
+                                                Венті отримує цю картку, він
+                                                застосовує навичку Пісня піднебесся одразу однократно.
+                                                Якщо Венті, обладнаний цією карткою, створить Вітряну область, при наступній Звичайній
+                                                атаці, за раунд витрачатиметься
+                                                на 1 Несумісний Елемент менше.
+                                            </p>
+                                            <p>(Цю картку можна додати в колоду, лише якщо в ній є Венті.)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./image/venti/cards/card2-modal.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section-block-modal venti" id="modal3">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal venti">
+                            <div class="modal-block-left">
+                                <div class="block-modal venti">
+                                    <div class="modal-block">
+                                        <div class="modal-text-block">
+                                            <p class="one">Помічник</p>
+                                            <p>
+                                                Фінальна фаза: завдає Анемо шкоди, 2 од., перемикає супротивника на Персонаж
+                                                супротивника, найближчий до вашого
+                                                активного персонажа.
+                                            </p>
+                                            <p>
+                                                Коли ваш персонаж або помічник викликають реакцію «Розсіювання»: конвертує елемент цієї
+                                                карти і змінює її шкоду на
+                                                елемент, яким було викликано «Розсіювання». Можна використовувати лише один раз, перш
+                                                ніж залишити поле бою.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./image/venti/cards/card3.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section-block-modal venti" id="modal4">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal venti">
+                            <div class="modal-block-left">
+                                <div class="block-modal venti">
+                                    <div class="modal-block">
+                                        <div class="modal-text-block">
+                                            <p>
+                                                Під час цього ходу, після використання одним з ваших персонажів навички: Переносить
+                                                статус вашого активного персонажа на наступного.
+                                            </p>
+                                            <p>
+                                                (Для додання цієї картки у свою колоду, вона має налічувати щонайменше 2 персонажів з
+                                                Мондштадту)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./image/venti/cards/card4-modal.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section-block-modal venti" id="modal5">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal venti">
+                            <div class="modal-block-left">
+                                <div class="block-modal venti">
+                                    <div class="modal-block">
+                                        <div class="modal-text-block">
+                                            <p>Картка перемикає на обраного персонажа й створює 1 Мультиелементний дайс.</p>
+                                            <p>
+                                                (Для додання цієї картки у свою колоду, вона має налічувати щонайменше
+                                                2 Анемо персонажів).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./image/venti/cards/card5-modal.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section-block-modal venti" id="modal6">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal venti">
+                            <div class="modal-block-left">
+                                <div class="block-modal venti">
+                                    <div class="modal-block">
+                                        <div class="modal-text-block">
+                                            <p>Створює 1 Анемо дайс.</p>
+                                            <p>
+                                                (Для додання цієї картки у свою колоду, вона має налічувати щонайменше
+                                                2 Анемо персонажів).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./image/venti/cards/card6-modal.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- регіон -->
+            <section data-animate="fade-in" id="region-section">
+                <h3 class="venti-h3">регіон</h3>
+                <div class="region">
+                    <div data-animate="fade-in" class="region-section">
+                        <div class="region-section-block">
+                            <p class="region-section-p venti">Мондштадт</p>
+                            <div class="region-section-text">
+                                <p>
+                                    Місто свободи, розташоване в північно-східній частині Тейвайту. З гір та просторих рівнин безтурботний
+                                    вітерець
+                                    приносить запах кульбаб - дарунок анемо Архонта, Барбатоса - через Сидрове озеро в Мондштадт, який
+                                    знаходиться на
+                                    острові посередині озера. 'Мондштадт' - один із семи регіонів Тейвату. 
+                                </p>
+                                <p>
+                                    Це перше місто, яке відвідує протагоніст та перше, яке ми досліджуємо протягом прологу. Громадяни Мондштадту
+                                    поклоняються анемо Архонту - Барбатосу. Кожного року Мондштадт святкує фестиваль під назвою “Люді
+                                    Гарпастум”, який
+                                    тримває 15 днів веселощів і розваг.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="./image/venti/region/region.png" alt="Мондштадт">
+                    </div>
+                    <div data-animate="fade-in" class="region-map">
+                        <p class="region-p venti">Мапа регіону</p>
+                        <iframe width="1300px" height="500px" class="map"
+                            data-src="https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_id=2&utm_medium=tool&utm_source=hoyolab&bbs_theme=light&bbs_theme_device=1&lang=en-us#/map/2?shown_types=&center=-19.94,120.68&zoom=-0.50"
+                            loading="lazy" frameborder="0">
+                        </iframe>
+                    </div>
+                    <div data-animate="fade-in" class="region-music">
+                        <p class="region-p venti">Плейлист регіону</p>
+                        <div class="region-music-section">
+                            <p>Для більшого погруження у атмосферу регіону ви можете послухати плейліст з пісня.</p>
+                            <iframe width="1300px" height="500px" class="spotify"
+                                src="https://open.spotify.com/embed/album/4B5efqHkeq0UaDGx8nYOuf?utm_source=generator" width="100%" height="380"
+                                frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./script/script.js"></script>
+    <script>
+        // Перевіряємо, чи попередня сторінка була "index"
+        if (sessionStorage.getItem("previousPage") === "index") {
+            const block = document.getElementById("myBlock");
+            block.classList.remove("hidden");
+
+            // Очищаємо попередню сторінку, щоб відео не відтворювалось при оновленні
+            sessionStorage.removeItem("previousPage");
+
+            // Затримка для плавного зникнення відео
+            const delayClass = 6450;
+            const delayAttribute = 7000;
+
+            setTimeout(() => {
+                block.classList.add('hidden');
+            }, delayClass);
+
+            setTimeout(() => {
+                block.style.display = 'none'; // Приховуємо блок повністю
+            }, delayAttribute);
+        }
+    </script>
+    <footer data-animate="fade-in" class="venti">
+        <div class="footer venti">
+            <div class="footer-section">
+                <div class="footer-first">
+                    <div class="footer-navigation">
+                        <nav class="footer-nav venti">
+                            <ul class="footer-nav-ul">
+                                <li><a href="#history-section">історія</a></li>
+                                <li><a href="#gameplay-section">геймплей</a></li>
+                                <li><a href="#ascensions-section">піднесення</a></li>
+                                <li><a href="#talents-section">таланти</a></li>
+                                <li><a href="#constellation-section">сузір'я</a></li>
+                                <li><a href="#cards-section">картки</a></li>
+                                <li><a href="#region-section">регіон</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a class="link-first venti" href="./autor.html">Про автора</a>
+                    <p class="footer-copyright venti">&copy; 2024 Дані захищені</p>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li>
+                            <a class="link" href="tel:+380665573816">+ 38 (066) 557 38 16</a>
+                        </li>
+                        <li>
+                            <a class="link" href="mailto:anna.lytvynova.pp.2023@lpnu.ua">anna.lytvynova.pp.2023@lpnu.ua</a>
+                        </li>
+                        <li>
+                            <a class="link" href="https://maps.app.goo.gl/qjgP1mHz5MEiXUup9" target="_blank">
+                                Україна, м. Львів,
+                                <br>вул. Степана Бандери 12
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/any.sh.ka/" target="_blank">
+                            <img src="./image/Instagram.svg" alt="інстаграм">
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://t.me/any_shka" target="_blank">
+                            <img src="./image/Telegram.svg" alt="телеграм">
+                            <p>Telegram</p>
+                        </a>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/profile.php?id=100022411786687&locale=uk_UA" target="_blank">
+                            <img src="./image/Facebook.svg" alt="фейсбук">
+                            <p>Facebook</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

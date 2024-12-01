@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anna Lytvynova">
+    <meta name="keywords" content="Архонти, геншин, Genshin Impact, історія, геймплей, піднесення, таланти, сузір’я">
+    <meta name="description" content="Архонти">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="./image/favicon.png" type="image/icon" class="icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/character-style.css">
+    <title>Архонти</title>
+</head>
+<body class="index">
+    <style>
+        ::-webkit-scrollbar-thumb {
+            background-color: #3A8AEE;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #3A8AEE;
+        }
+        ::-webkit-scrollbar-track {
+            border-radius: 5px;
+            background-color: #3A8AEE;
+        }
+        ::-webkit-scrollbar-button {
+            height: 0.5px;
+            background-color: #3A8AEE;
+        }
+    </style>
+    <main class="index">
+        <div class="banner" data-animate="fade-in">
+            <img src="./image/index/venti.png" alt="банер Венті">
+            <button class="index"><a href="./venti.html" onclick="setPreviousPage()">Помолитися</a></button>
+        </div>
+        <div class="banner" data-animate="fade-in">
+            <img src="./image/index/zhongli.png" alt="банер Джон Лі">
+            <button class="index"><a href="./zhongli.html" onclick="setPreviousPage()">Помолитися</a></button>
+        </div>
+        <div class="banner" data-animate="fade-in">
+            <img src="./image/index/raiden.png" alt="банер Райден">
+            <button class="index"><a href="./raiden.html" onclick="setPreviousPage()">Помолитися</a></button>
+        </div>
+        <div class="banner" data-animate="fade-in">
+            <img src="./image/index/nahida.png" alt="банер Нахіда">
+            <button class="index"><a href="./nahida.html" onclick="setPreviousPage()">Помолитися</a></button>
+        </div>
+        <div class="banner" data-animate="fade-in">
+            <img src="./image/index/furina.png" alt="банер Фуріна">
+            <button class="index"><a href="./furina.html" onclick="setPreviousPage()">Помолитися</a></button>
+        </div>
+    </main>
+    <script src="./script/script.js"></script>
+    <script>
+        // Зберігаємо "index" у sessionStorage як попередню сторінку перед переходом
+        function setPreviousPage() {
+            sessionStorage.setItem("previousPage", "index");
+        }
+    </script>
+</body>
+
+</html>

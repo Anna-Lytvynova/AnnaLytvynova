@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anna Lytvynova">
+    <meta name="keywords" content="Архонти, геншин, Genshin Impact, історія, геймплей, піднесення, таланти, сузір’я">
+    <meta name="description" content="Джонлі, Zhongli">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="./image/favicon.png" type="image/icon" class="icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/character-style.css">
+    <title>Джонлі</title>
+</head>
+<body class="zhongli">
+    <div class="video-container hidden" id="myBlock">
+        <video autoplay muted playsinline>
+            <source src="./image/animation.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео.
+        </video>
+    </div>
+    <style>
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--nav-text-zhongli);
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #e19467;
+    }
+    ::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background-color:  var(--nav-block-zhongli);
+    }
+    </style>
+    <header data-animate="fade-in">
+        <!-- навігація -->
+        <nav class="nav zhongli">
+            <a href="./index.html"><span>архонти</span></a>
+            <ul>
+                <li><a href="#history-section">історія</a></li>
+                <li><a href="#gameplay-section">геймплей</a></li>
+                <li><a href="#ascensions-section">піднесення</a></li>
+                <li><a href="#talents-section">таланти</a></li>
+                <li><a href="#constellation-section">сузір'я</a></li>
+                <li><a href="#cards-section">картки</a></li>
+                <li><a href="#region-section">регіон</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- віджет з архонтом -->
+        <div data-animate="fade-in" class="carousel">
+            <button class="carousel-button left zhongli" type="button">
+                <a href="./venti.html">
+                    <svg width="20" height="50">
+                        <use href="./image/icons.svg#icon-arrow-left"></use>
+                    </svg>
+                </a>
+            </button>
+            <div class="carousel-vidget zhongli">
+                <div class="carousel-vidget-text">
+                    <h1>Джонлі</h1>
+                    <h2>Гео архонт та бог контрактів</h2>
+                    <p>
+                        Таємничий консультант похоронного бюро Ваншен. Мужній, елегантний і надзвичайно ерудований. Хоча ніхто не знає, звідки
+                        Джонлі, проте він майстер у ввічливій поведінці та знанні правил. Разом із господинею похоронного бюро Ваншен він
+                        виконує всілякі ритуали.
+                    </p>
+                </div>
+                <img class="img" src="./image/zhongli/carousel/zhongli.png" alt="Джон Лі">
+                <img class="ellipse-left" src="./image/zhongli/carousel/Ellipse1.png" alt="ліве коло">
+                <img class="ellipse-right" src="./image/zhongli/carousel/Ellipse2.png" alt="праве коло">
+            </div>
+            <button class="carousel-button right zhongli" type="button">
+                <a href="./raiden.html">
+                    <svg width="20" height="50">
+                        <use href="./image/icons.svg#icon-arrow-right"></use>
+                    </svg>
+                </a>
+            </button>
+        </div>
+        <div>
+            <!-- історія -->
+            <section data-animate="fade-in" id="history-section">
+                <h3 class="zhongli-h3">історія</h3>
+                <div class="history-section">
+                    <div data-animate="fade-in" class="history-section-block">
+                        <div class="history-person-block">
+                            <img src="./image/zhongli/history/icon.png" alt="іконка Джон Лі" width="250px" height="250px">
+                            <div class="history-text zhongli">
+                                <p>
+                                    Людське ім’я: Джонлі
+                                    <br>Божествене ім’я: Моракс
+                                    <br>Бог: Контрактів
+                                    <br>Стихія: Гео
+                                    <br>Регіон: Лі Юе
+                                    <br>Рідкість: 5 зірок
+                                    <br>Зброя: Спис
+                                    <br>День народження: 16 червня
+                                </p>
+                            </div>
+                        </div>
+                        <div class="history-symbol">
+                            <img src="./image/zhongli/history/elemental-symbol.png" alt="гео символ" width="280px" height="280px">
+                            <img src="./image/zhongli/history/region-logo.png" alt="логотип Лі Юе" width="280px" height="280px">
+                        </div>
+                    </div>
+                    <div class="history-block">
+                        <div data-animate="fade-in" class="history-person zhongli">
+                            <h4>Історія 1</h4>
+                            <p>
+                                Якщо людина має жорсткі стандарти, то в Лі Юе її називають педантом. Насправді, кожна людина тією чи іншою мірою
+                                педантична. Хтось відмахуватиметься від гострих страв, навіть не скуштувавши їх, або від риби, або буде скаржитися, що
+                                його тофу не вистачає м'якості та солодкого післясмаку... Що стосується Джон Лі, то він педантичний у всьому. Він
+                                насолоджуватиметься виступом лише найзнаменитіших артистів, виводитиме на прогулянку лише найрозкішнішого птаха і навіть
+                                заходитиме на кухню до шеф-кухаря, щоб пояснити йому пропорції риби до креветок для приготування ідеальної повномісячної
+                                яєчні. Джон Лі розуміє абсолютно все: від побуту до політики, але в повсякденній розмові з вами він буде говорити тільки
+                                на самі марні теми. Більше він не має наміру ділитися ні з ким.
+                            </p>
+                        </div>
+                        <div data-animate="fade-in" class="history-person zhongli">
+                            <h4>Історія 2</h4>
+                            <p>
+                                Не можна купувати речі, не поторгувавшись. Цю звичку поділяють усі жителі Лі Юе, і вони знають, що якою б високою не
+                                була ціна, найкраще розпочати торги з її половини. Однак Джон Лі ніколи не дивиться на цінники. Якщо йому сподобалася
+                                дрібниця, він заплатить за неї стільки, скільки скаже продавець, іноді навіть не буде проти переплатити. Але з невідомої
+                                причини Джон Лі постійно забуває свій гаманець удома. З дрібними покупками йому допомагають його друзі, а з великими він
+                                завжди знаходить виправдання, щоби відкласти оплату. Багато улесливих торговців, яких збагатив Джон Лі, сходяться на
+                                думці, що він має рідкісну якість: Джон Лі знає ціну грошам, але також і розуміє, наскільки тяжко вони дістаються. Однак
+                                він не розуміє, як слово «бідність» може відноситися до нього. Іншими словами, Джон Лі не може уявити себе без грошей.
+                                Він не розуміє, як такі люди ще не вмерли з голоду.
+                            </p>
+                        </div>
+                        <div data-animate="fade-in" class="history-person zhongli">
+                            <h4>Історія 3</h4>
+                            <p>
+                                Однак Джон Лі не може померти з голоду. Йому не треба хвилюватися про гроші, адже його серце та розум лежать у семи
+                                королівствах. Що стосується фінансів... Джон Лі і є їхнє втілення, адже він - Володар Каміння, Гео Архонт, правлячий Лі
+                                Юе, він же Моракс, на честь якого була названа валюта «мора». З настанням ночі киплячий життям Лі Юе засинає, і іноді
+                                Архонт піднімається на вершину гори і дивиться на місто, яке створив власними руками. Жителі Лі Юе називають Володаря
+                                Каміння багатьма іменами. Коли він написав зведення законів Лі Юе, люди охрестили його богом угод та контрактів. Коли
+                                він викарбував першу монету мори, яка стала фундаментальною ланкою світової економіки, торговці прозвали його богом
+                                комерції. Будучи найдавнішим із семи архонтів, Джон Лі став свідком багатотисячолітньої історії світу, тому
+                                вчені-історики проголосили його богом історії. Тисячі років тому, коли перші поселенці Лі Юе вперше розпалили вогонь у
+                                своїх кам'яних печах і приготували собі їжу, вони почали називати його богом вогнища. Чужоземці називають його Моракс,
+                                але жителям Лі Юе більше подобається називати його Володарем Каміння. Крім того, дітям та оперним сценаристам особливо
+                                подобається його образ войовничого божества, котрий покарав злих Архонтів на полях стародавніх битв. Вулична їжа, яку
+                                придумав Володар Каміння, заблукавши в лісах; кам'яні таблички з написами Володаря Каміння; знаменита оперета, в якій
+                                Володар Каміння сам взяв участь... З упевненістю можна сказати, що багато звичаїв та традицій Лі Юе виникли завдяки
+                                впливу Гео Архонта на життя людей. Жителі Лі Юе неймовірно пишаються тим, що їхній Архонт живе серед них.
+                            </p>
+                        </div>
+                        <div data-animate="fade-in" class="history-person zhongli">
+                            <h4>Історія 4</h4>
+                            <p>
+                                Як засновник гавані Лі Юе, Моракс найбільше цінує в цій торговій столиці «договори». У Лі Юе їх безліч: від простих
+                                торгових угод до стародавнього склепіння законів, які склав він сам під час заснування Лі Юе. Усі «договори» служать
+                                різним цілям. Для торговців договори є гарантією чесної та надійної угоди та прив'язують її до дат відвантаження,
+                                оплати, місць передачі товару тощо. Це сприяє здоровій комерції, яка є кровоносною системою Лі Юе. Угруповання Цісін
+                                жорстко карає порушників цих договорів не тільки щоб дотримуватись законів Моракса, але й для підтримки життєздатності
+                                всього міста. Протягом поколінь Цісін були тими, хто тлумачив і вносив поправки до склепіння законів, намагаючись
+                                закрити всі знайдені в них лазівки. Ті ж лазівки, які вони не могли перекрити, вважалися «дозволеними ходами» доти, доки
+                                відповідну поправку не буде прийнято. На сьогоднішній день в останньому виданні склепіння законів налічується 279
+                                сторінок. Волю Небес Цісін, Нін Гуан, обрану нині для тлумачення та зміни правил, за свою ефективність та точність
+                                називають «кравцем Лі Юе». Однак якими б складними і заплутаними були ці закони, один закон для Володаря Камня стоїть
+                                вище за інших: «На того, хто порушить договір, обрушиться гнів Каміння».
+                            </p>
+                        </div>
+                        <div data-animate="fade-in" class="history-person zhongli">
+                            <h4>Історія 5</h4>
+                            <p>
+                                Моракс - старший із семи Архонтів. Він був свідком тих часів, коли Війна Архонтів нарешті була закінчена, і семеро
+                                Архонтів, що залишилися, зайняли свої трони, поклавши кінець епосі богів. Хоча їхні погляди і розходилися, і жили вони
+                                далеко один від одного, але їм було доручено одне - спрямовувати людей. Час минав, одні архонти змінювалися іншими. Лише
+                                два Архонти залишилися з тих часів і до наших днів: Володар Каміння та Анемо Архонт свободи та вітру. Анемо Архонт,
+                                Барбатос, був другим за старшинством. Дві тисячі років тому він прибув у Лі Юе, щоб відвідати Гео Архонта, і той був
+                                готовий надати будь-яку послугу Анемо Архонту, але Барбатос просто простяг йому пляшку і сказав: «Це вино зробили в
+                                Мондштадті. Пригощайся, будь ласка». Моракс не міг повірити, що Архонт може просто залишити свої обов'язки заради того,
+                                щоб пригостити вином свого товариша. Однак це був далеко не останній візит Барбатоса до Лі Юе. Він хотів знати все про
+                                місто та його мешканців, його цікавість струмувала, наче вино з пляшки. У ті часи семеро архонтів проводили зустрічі в
+                                Лі Юе, і Моракс досі пам'ятає смак того вина, яке вони пили під час цих зборів. Світ продовжував змінюватися, Архонти
+                                вмирали та відроджувалися. З сімох присутніх на зборах Архонтів залишилося лише двоє. Нові молоді архонти почали
+                                забувати про свій обов'язок. Трьох тисяч років було достатньо, щоб сточити найміцніші камені. Навіть Барбатос не
+                                відвідував Лі Юе протягом багатьох сотень років. Моракс, який одного разу прогулювався набережною, почув, як торговець
+                                хвалить свого працівника: «Ти виконав свою роботу. Тепер можеш відпочити». Стоячи посеред жвавої вулиці, Моракс поринув
+                                у свої думки: «А чи виконав я свою роботу?..»
+                            </p>
+                        </div>
+                        <div data-animate="fade-in" class="history-person zhongli">
+                            <h4>Історія 6</h4>
+                            <p>
+                                Після того, як спектакль «Церемонія Вознесіння» був майстерно поставлений і зіграний Джон Лі, який виконав у ньому
+                                головну роль, Синьйора, одна з Провісників Фатуї, особисто з'явилася до нього. Згідно із заздалегідь підписаним
+                                договором, вона прийшла за Серцем Бога Гео Архонта Моракса. Стоячи віч-на-віч перед мандрівником(цей) і двома
+                                Провісниками Фатуї, Джон Лі чесно розповів про угоду з Кріо Архонтом. За його словами, це його останній договір,
+                                «контракт, який завершує всі контракти». Але, хоч би хто не казав, втрата божественних сил - надто висока ціна навіть за
+                                те, щоб захистити Лі Юе. Серед простих смертних є непорушне правило «рівноцінного обміну». Бог контрактів за довгі
+                                тисячоліття свого існування підписав безліч контрактів, тому таку важливу угоду просто має обіцяти йому деякі вигоди.
+                                Отже Гео Архонт віддав своє Серце Бога за контрактом. То що такого могла запропонувати йому Кріо Архонт, щоб зрівняти
+                                чаші терезів?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- геймплей -->
+            <section data-animate="fade-in" id="gameplay-section">
+                <h3 class="zhongli-h3">геймплей</h3>
+                <div class="gameplay-section">
+                    <p data-animate="fade-in" class="gameplay-text">
+                        Чжун Лі – універсальний персонаж, чиї скіли здатні забезпечити команду і додатковою шкодою, і гарною підтримкою.
+                        <span class="zhongli">Елементальна навичка</span> Архонта викликає Гео конструкцію, яка завдає періодичної шкоди навколо себе і дає один з
+                        найміцніших щитів у грі. <span class="zhongli">Вибух стихій</span> Чжун Лі не тільки атакує Гео втратою по супротивникам, а й накладає на них
+                        Скам'янення, що заважає пересуватися.
+                    </p>
+                    <div class="gameplay-video-block">
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/zhongli/gameplay/normal-attack.webp" alt="Звичайна атака">
+                            <p>Звичайна атака</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/zhongli/gameplay/charged-attack.webp" alt="Заряджена атака">
+                            <p>Заряджена атака</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/zhongli/gameplay/plunging-attack.webp" alt="Атака в падіні">
+                            <p>Атака в падіні</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/zhongli/gameplay/elemental-attack-quick-press.webp" alt="Елементальна навичка(швидкий натиск)">
+                            <p>Елементальна навичка(швидкий натиск)</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/zhongli/gameplay/elemental-attack-long-press.webp" alt="Елементальна навичка(довгий натиск)">
+                            <p>Елементальна навичка(довгий натиск)</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <img src="./image/zhongli/gameplay/elemental-burst.webp" alt="Вибух стихій">
+                            <p>Вибух стихій</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <video src="./image/zhongli/gameplay/animation1.mp4" loop muted autoplay></video>
+                            <p>Анімація очікування</p>
+                        </div>
+                        <div data-animate="fade-in" class="gameplay-video">
+                            <video src="./image/zhongli/gameplay/animation2.mp4" loop muted autoplay></video>
+                            <p>Анімація очікування</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- піднесення -->
+            <section data-animate="fade-in" id="ascensions-section">
+                <h3 class="zhongli-h3">піднесення</h3>
+                <div class="ascensions-section">
+                    <p data-animate="fade-in" class="ascensions-text">
+                        Для піднесення Джонлі вам необхідно зібрати камінь Бурштину(ябо як його ще називають Кор Ляпіс), котрий можна знайти на
+                        горі Хулао, або біля скел Лі Юе. Також вам знадобиться слиз слайма який випадає з елементальних слаймів. Знайти їх не є
+                        проблемою, адже вони знаходяться всюди у всіх регіонах. Обов’язковою складовою піднесення є базальтова колона. ЇЇ ви
+                        можете отримати, при перемозі над босом — Гео гіпостазисом. Звідти ж є шанс випасти камню топазу Прітхва, котри також є
+                        необхідним для піднесення Джонлі.
+                    </p>
+                    <img data-animate="fade-in" src="./image/zhongli/ascensions/Upgrade.png" alt="піднесення">
+                </div>
+            </section>
+
+            <!-- таланти -->
+            <section data-animate="fade-in" id="talents-section">
+                <h3 class="zhongli-h3">таланти</h3>
+                <div class="talents-section">
+                    <div data-animate="fade-in" class="talents-section-block">
+                        <div class="talents-section-block-interactive">
+                            <div class="talents-left-block">
+                                <div class="talents-left-section hidden-block" id="hiddenBlock1">
+                                    <p class="dark-gold">Боєвий талант</p>
+                                    <img src="./image/zhongli/talents/talent1.png" alt="Кам’яний дощ">
+                                    <p class="dark-gold">Кам’яний дощ</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <p class="talents-text">
+                                        <span class="gold">Звичайна атака:</span>
+                                        <br>Виконує до 6 послідовних ударів списом.
+                                        <br><br>
+                                        <span class="gold">Заряджена атака:</span>
+                                        <br>Споживає певну кількість витривалості та зринає вперед, кам’яні списи ступають за ним.
+                                        <br><br>
+                                        <span class="gold">Атака в падінні:</span>
+                                        <br>Стрибає з повітря на землю, завдаючи водночас шкоди ворогам поблизу та по площі.
+                                    </p>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                                <div class="talents-left-section hidden-block" id="hiddenBlock2">
+                                    <p class="dark-gold">Боєвий талант</p>
+                                    <img src="./image/zhongli/talents/talent2.png" alt="Ядро землі">
+                                    <p class="dark-gold">Ядро землі</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <div class="talents-text">
+                                        <p>
+                                            Кожна гора, камінь та маленька ділянка землі переповнені силою Гео. Тих, хто володіє цією силою, однак, існує
+                                            небагато.
+                                            <br><br>
+                                            <span class="gold">Звичайне натискання:</span>
+                                            <br>Наказує силам землі створити Кам’яну Стелу.
+                                            <br><br>
+                                            <span class="gold">Довге натискання:</span>
+                                            <br>Провокує вибух Гео енергії, який має наступні ефекти:<br>
+                                        <ul class="talents-list">
+                                            <li>
+                                                Створює Кам’яну Стелу, якщо їх кількість на полі не перевищує максимальну.
+                                            </li>
+                                            <li>
+                                                Викликає нефритовий щит, здатність поглинання якого залежить від максимального здоров’я Джонлі.
+                                            </li>
+                                            <li>
+                                                Завдає <span class="geo">Гео шкоди по площі</span>.
+                                            </li>
+                                            <li>
+                                                Якщо поруч знаходяться декілька цілей (максимум дві), <span class="geo">сповнених Гео енергії</span>, вибух
+                                                поглине певну її кількість. Цей ефект не завдає шкоди.
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <span class="gold">Кам’яна Стела:</span>
+                                        <br>Її створення завдає Гео шкоди по площі.
+                                        <br>Після чого Стела резонує з іншими Гео конструкціями, завдаючи Гео шкоди опонентам навколо.
+                                        <br>Кам’яна Стела є Гео конструкцією, може бути використана для здирання та блокування атак.
+                                        <br>Одночасно існувати може лише одна Стела, створена Джонлі особисто.
+                                        <br><br>
+                                        <span class="gold">Нефритовий Щит:</span>
+                                        <br>Поглинає 150% шкоди усіх Елементальних та Фізичних атак.
+                                        Персонаж, захищений Нефритовим Щитом, зменшуватиме Елементальний та Фізичний опір супротивників поруч у невеликій
+                                        області на 20%. Цей ефект не може сумуватися.
+                                        </p>
+                                    </div>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                                <div class="talents-left-section hidden-block" id="hiddenBlock3">
+                                    <p class="dark-gold">Боєвий талант</p>
+                                    <img src="./image/zhongli/talents/talent3.png" alt="Небесна зірка">
+                                    <p class="dark-gold">Небесна зірка</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <p class="talents-text">
+                                        Викликає метеор, який падає до землі та завдає масивної <span class="geo">Гео шкоди</span> опонентам, накладаючи на них статус <span class="gold">Скам’яніння</span>.
+                                        <br><br>
+                                        <span class="gold">Скам’яніння:</span>
+                                        <br>Опоненти з цим статусом <span class="gold">Скам’яніння</span> не можуть рухатися..
+                                    </p>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                                <div class="talents-left-section hidden-block" id="hiddenBlock4">
+                                    <p class="dark-gold">Пасивний талант</p>
+                                    <img src="./image/zhongli/talents/talent4.png" alt="Судження імператора">
+                                    <p class="dark-gold">Судження імператора</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <div class="talents-text">
+                                        <p>
+                                            Коли Нефритовий Щит поглинає шкоду, він буде зміцнюватися:
+                                        <ul class="talents-list">
+                                            <li>
+                                                Персонажі під зміцненням отримуватимуть 5% бонусу до міцності щита.
+                                            </li>
+                                            <li>
+                                                Ефект складається до п’яти раз та триває доки Нефритовий Щит активний.
+                                            </li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                                <div class="talents-left-section hidden-block" id="hiddenBlock5">
+                                    <p class="dark-gold">Пасивний талант</p>
+                                    <img src="./image/zhongli/talents/talent5.png" alt="Карбування золота">
+                                    <p class="dark-gold">Карбування золота</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <div class="talents-text">
+                                        <p>
+                                            Джонлі завдає додаткової шкоди, що ґрунтується на його максимальному Здоров’ї:
+                                            <ul class="talents-list">
+                                                <li>
+                                                    Шкоди Звичайних, Заряджених та Атак у падінні зростає на 1,39% від максимального Здоров’я.
+                                                </li>
+                                                <li>
+                                                    Шкода, завдана Кам’яною Стелою <span class="gold">Ядра землі</span>, резонансом та довгим натисканням здібності зростає на 1,9% від максимального Здоров’я.
+                                                </li>
+                                                <li>
+                                                    Шкода метеора, викликаного здібністю <span class="gold">Небесна зірка</span> зростає на 33% від максимального Здоров’я.
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                                <div class="talents-left-section hidden-block" id="hiddenBlock6">
+                                    <p class="dark-gold">Пасивний талант</p>
+                                    <img src="./image/zhongli/talents/talent6.png" alt="Кришталева доля">
+                                    <p class="dark-gold">Кришталева доля</p>
+                                    <div class="description">
+                                        <p>Опис</p>
+                                    </div>
+                                    <p class="talents-text">
+                                        Повертає 15% руди, використаної при куванні зброї типу спис.
+                                    </p>
+                                    <div class="star-block">
+                                        <div class="string-b">1</div>
+                                        <img src="./image/star.png" alt="зірочка" class="star">
+                                        <div class="string-a">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="talents-intersctive-img" src="./image/zhongli/talents/talent-bg.png" alt="таланти">
+                            <div class="talents-right-block">
+                                <div class="talents-right-section block" id="block1">
+                                    <p>Кам’яний дощ</p>
+                                    <img src="./image/zhongli/talents/talent1.png" alt="Кам’яний дощ">
+                                </div>
+                                <div class="talents-right-section block" id="block2">
+                                    <p>Ядро землі</p>
+                                    <img src="./image/zhongli/talents/talent2.png" alt="Ядро землі">
+                                </div>
+                                <div class="talents-right-section block" id="block3">
+                                    <p>Небесна зірка</p>
+                                    <img src="./image/zhongli/talents/talent3.png" alt="Небесна зірка">
+                                </div>
+                                <div class="talents-right-section block" id="block4">
+                                    <p>Судження імператора</p>
+                                    <img src="./image/zhongli/talents/talent4.png" alt="Судження імператора">
+                                </div>
+                                <div class="talents-right-section block" id="block5">
+                                    <p>Карбування золота</p>
+                                    <img src="./image/zhongli/talents/talent5.png" alt="Карбування золота">
+                                </div>
+                                <div class="talents-right-section block" id="block6">
+                                    <p>Кришталева доля</p>
+                                    <img src="./image/zhongli/talents/talent6.png" alt="Кришталева доля">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p data-animate="fade-in" class="talents-p">
+                        Для покращення талантів вам знадобиться книги про “Золото”, які можна добути у маєтку Тайшань в СР/СБ/НД. Починаючи з 7
+                        рівня вам необхідно зібрати Ріг Небесного Нарвала. Його можна отримати після перемоги над щотижневим босом «Юнним
+                        майстром», який знаходиться в Лі Юе у Золотій палаті. Щоб підвищити талант до найвищого 10 рівня вам необхідно мати
+                        Корону Прозріння. ЇЇ можна отримати під час івентів або із завдань деяких ігрових режимів.
+                    </p>
+                    <img data-animate="fade-in" class="talents-section-img" src="./image/zhongli/talents/upgrade.png" alt="покращення талантів">
+                </div>
+            </section>
+
+            <!-- сузір'я -->
+            <section data-animate="fade-in" id="constellation-section">
+                <h3 class="zhongli-h3">сузір'я</h3>
+                <div data-animate="fade-in">
+                    <div class="constellation-section">
+                        <div class="constellation-section-block">
+                            <div class="constellation-section-block-interactive">
+                                <div class="constellation-left-block">
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock7">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/zhongli/constellation/consellation1.png" alt="Камінь, скелет землі">
+                                            <div class="star-block-top">
+                                                <div class="string-b">1</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Камінь, скелет землі</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">1</span></p>
+                                            <p>
+                                                Підвищує максимальну кількість Кам’яних Стел, створених здібністю <span class="gold">Ядро землі</span> до двох.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock8">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/zhongli/constellation/consellation2.png" alt="Камінь, колиска нефриту">
+                                            <div class="star-block-top">
+                                                <div class="string-b">.</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">.</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Камінь, колиска нефриту</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">2</span></p>
+                                            <p>
+                                                Використання здібності <span class="gold">Небесна зірка</span> активує Нефритовий Щит для усіх персонажів поблизу.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock9">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/zhongli/constellation/consellation3.png" alt="Нефрит, що мерехтить у темряві">
+                                            <div class="star-block-top">
+                                                <div class="string-b">.</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">.</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Нефрит, що мерехтить у темряві</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">3</span></p>
+                                            <p>
+                                                Збільшує рівень навички <span class="gold">Ядро землі</span> на 3.
+                                                <br>Максимальний можливий рівень – 15.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock10">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/zhongli/constellation/consellation4.png" alt="Топаз, твердий і незламний">
+                                            <div class="star-block-top">
+                                                <div class="string-b">.</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">.</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Топаз, твердий і незламний</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">4</span></p>
+                                            <p>
+                                                Збільшує площу ураження <span class="gold">Небесної зірки</span> на 20% і тривалість ефекту Скам’яніння на 2 секунди.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock11">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/zhongli/constellation/consellation5.png" alt="Лазурит, захисник небесних порядків">
+                                            <div class="star-block-top">
+                                                <div class="string-b">.</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">.</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Лазурит, захисник небесних порядків</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">5</span></p>
+                                            <p>
+                                                Збільшує рівень навички <span class="gold">Небесна зірка</span> на 3.
+                                                <br>Максимальний можливий рівень – 15.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="constellation-left-section hidden-block" id="hiddenBlock12">
+                                        <div class="constellation-left-section-top">
+                                            <img src="./image/zhongli/constellation/consellation6.png" alt="Золото, дари світові">
+                                            <div class="star-block-top">
+                                                <div class="string-b">.</div>
+                                                <img src="./image/star.png" alt="зірочка" class="star">
+                                                <div class="string-a">.</div>
+                                            </div>
+                                        </div>
+                                        <div class="constellation-text">
+                                            <p><span class="dark-gold">Золото, дари світовіа</span></p>
+                                            <p>Рівень сузір’я: <span class="anemo">6</span></p>
+                                            <p>
+                                                Коли Нефритовий Щит поглинає демедж, 40% від нього додається до Здоров’я активного персонажа. Таким чином за раз можна
+                                                конвертувати не більше ніж 8% від максимального Здоров’я активного персонажа.
+                                            </p>
+                                        </div>
+                                        <div class="string">.</div>
+                                        <div class="star-block-bottom">
+                                            <div class="string-b">1</div>
+                                            <img src="./image/star.png" alt="зірочка" class="star">
+                                            <div class="string-a">1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="conselattion-section-img" src="./image/zhongli/constellation/consellation-bg.png" alt="сузір'я">
+                                <div class="constellation-right-block">
+                                    <div class="constellation-right-section block" id="block7">
+                                        <img src="./image/zhongli/constellation/consellation1.png" alt="Камінь, скелет землі">
+                                        <p>Камінь, скелет землі</p>
+                                    </div>
+                                    <div class="constellation-right-section block" id="block8">
+                                        <img src="./image/zhongli/constellation/consellation2.png" alt="Камінь, колиска нефриту">
+                                        <p>Камінь, колиска нефриту</p>
+                                    </div>
+                                    <div class="constellation-right-section block" id="block9">
+                                        <img src="./image/zhongli/constellation/consellation3.png" alt="Нефрит, що мерехтить у темряві">
+                                        <p>Нефрит, що мерехтить у темряві</p>
+                                    </div>
+                                    <div class="constellation-right-section block" id="block10">
+                                        <img src="./image/zhongli/constellation/consellation4.png" alt="Топаз, твердий і незламний">
+                                        <p>Топаз, твердий і незламний</p>
+                                    </div>
+                                    <div class="constellation-right-section block" id="block11">
+                                        <img src="./image/zhongli/constellation/consellation5.png" alt="Лазурит, захисник небесних порядків">
+                                        <p>Лазурит, захисник небесних порядків</p>
+                                    </div>
+                                    <div class="constellation-right-section block" id="block12">
+                                        <img src="./image/zhongli/constellation/consellation6.png" alt="Золото, дари світові">
+                                        <p>Золото, дари світові</p>
+                                    </div>
+                                </div>
+                                <div class="star-consellation zhongli">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock7">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock8">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock9">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock10">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock11">
+                                    <img src="./image/star-consellation.png" alt="зірка" class="animationBlock" id="animationBlock12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- картки -->
+            <section data-animate="fade-in" id="cards-section">
+                <h3 class="zhongli-h3">картки</h3>
+                <div class="cards-section">
+                    <p data-animate="fade-in" class="cards-text">
+                        «Священний заклик сімох» – постійний ігровий режим, доданий у версії 3.3. Він є покроковою колекційною картковою
+                        грою на
+                        двох, заснованою на механіках <span class="genshin">Genshin Impact</span>. Мета гри - зібрати власну карткову колоду
+                        і перемогти в поєдинку, здолавши
+                        всіх персонажів супротивника. Гравці можуть запрошувати зіграти партію деяких ігрових та неігрових персонажів, а
+                        також
+                        грати проти інших мандрівників, проте нагород за PvP-дуелі не передбачено.
+                        Гравці можуть розблокувати навчальне завдання Приходьте зіграти у Священний заклик сімох після досягнення Рангу
+                        пригод
+                        32 та завершення завдання Архонтів Пролог. Глава III: Пісня про драконову свободу.
+                    </p>
+                    <div class="cards-section-block">
+                        <img data-animate="fade-in" src="./image/zhongli/cards/card1.png" alt="картка" class="openModalBtn" data-modal="modal1">
+                        <img data-animate="fade-in" src="./image/zhongli/cards/card2.png" alt="картка" class="openModalBtn" data-modal="modal2">
+                        <img data-animate="fade-in" src="./image/zhongli/cards/card3.png" alt="картка" class="openModalBtn" data-modal="modal3">
+                        <img data-animate="fade-in" src="./image/zhongli/cards/card4.png" alt="картка" class="openModalBtn" data-modal="modal4">
+                        <img data-animate="fade-in" src="./image/zhongli/cards/card5.png" alt="картка" class="openModalBtn" data-modal="modal5">
+                        <img data-animate="fade-in" src="./image/zhongli/cards/card6.png" alt="картка" class="openModalBtn" data-modal="modal6">
+                    </div>
+                </div>
+            </section>
+
+            <!-- модальні вікна -->
+            <section id="modal">
+                <div class="cards-section-block-modal zhongli" id="modal1">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal zhongli">
+                            <div class="modal-block-left">
+                                <div class="block-modal zhongli">
+                                    <div class="modal-block">
+                                        <div class="modal-mini-block zhongli">
+                                            <img src="./image/zhongli/cards/modal1.png" alt="Кам’яний дощ">
+                                        </div>
+                                        <div class="modal-text">
+                                            <div class="modal-text-block">
+                                                <p class="one">Кам’яний дощ</p>
+                                                <p class="two">Звичайна атака</p>
+                                                <p>Завдає 2 од. Фізичного шкоди.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stuhiya">
+                                        <img src="./image/zhongli/cards/geo1.png" alt="гео стихія">
+                                        <img src="./image/stuhiya-nichogo2.png" alt="стихія нічого">
+                                    </div>
+                                </div>
+                                <div class="block-modal zhongli">
+                                    <div class="modal-block">
+                                        <div class="modal-mini-block zhongli">
+                                            <img src="./image/zhongli/cards/modal2.png" alt="Ядро землі">
+                                        </div>
+                                        <div class="modal-text">
+                                            <div class="modal-text-block">
+                                                <p class="one">Ядро землі</p>
+                                                <p class="two">Елементальна навичка</p>
+                                                <p>Завдає 1 од. Гео шкоди, викликає Кам’яну Стелу.</p>
+                                            </div>
+                                            <div class="modal-text-block">
+                                                <p class="one">Кам’яна Стела</p>
+                                                <p>
+                                                    Наприкінці раунду завдає 1 од. Гео шкоди.
+                                                    <br>Зарядів: 2
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stuhiya">
+                                        <img src="./image/zhongli/cards/geo3.png" alt="гео стихія">
+                                    </div>
+                                </div>
+                                <div class="block-modal zhongli">
+                                    <div class="modal-block">
+                                        <div class="modal-mini-block zhongli"><img src="./image/zhongli/cards/modal3.png" alt="Ядро землі: Ударний камінь">
+                                        </div>
+                                        <div class="modal-text">
+                                            <div class="modal-text-block">
+                                                <p class="one">Ядро землі: Ударний камінь</p>
+                                                <p class="two">Елементальна навичка</p>
+                                                <p>Завдає 3 од. Гео шкоди, викликає 1 Кам’яну Стелу та 1 Нефритовий Щит.</p>
+                                            </div>
+                                            <div class="modal-text-block">
+                                                <p class="one">Кам’яна Стела</p>
+                                                <p>
+                                                    Наприкінці раунду завдає 1 од. Гео шкоди.
+                                                    <br>Зарядів: 2
+                                                </p>
+                                            </div>
+                                            <div class="modal-text-block">
+                                                <p class="one">Нефритовий Щит</p>
+                                                <p>Надає активному персонажу 2 од. Щита.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stuhiya">
+                                        <img src="./image/zhongli/cards/geo5.png" alt="гео стихія">
+                                    </div>
+                                </div>
+                                <div class="block-modal zhongli">
+                                    <div class="modal-block">
+                                        <div class="modal-mini-block zhongli"><img src="./image/zhongli/cards/modal4.png" alt="Небесна зірка">
+                                        </div>
+                                        <div class="modal-text">
+                                            <div class="modal-text-block">
+                                                <p class="one">Небесна зірка</p>
+                                                <p class="two">Вибух Стихій</p>
+                                                <p>
+                                                    Завдає 4 од. Гео шкоди, наносить статус Скам’яніння на обраного персонажа
+                                                    супротивника.
+                                                </p>
+                                            </div>
+                                            <div class="modal-text-block">
+                                                <p class="one">Скам’яніння</p>
+                                                <p>Персонаж з цим статусом не може використовувати навички. (Триває до кінця раунду)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stuhiya">
+                                        <img src="./image/zhongli/cards/geo3.png" alt="гео стихія">
+                                        <img src="./image/energi3.png" alt="енергія">
+                                    </div>
+                                </div>
+                                <div class="fake">.</div>
+                            </div>
+                            <img src="./image/zhongli/cards/card1-modal.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section-block-modal zhongli" id="modal2">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal zhongli">
+                            <div class="modal-block-left">
+                                <div class="block-modal zhongli">
+                                    <div class="modal-block">
+                                        <div class="modal-text-block">
+                                            <p>
+                                                Бойова дія: Коли ваш активний персонаж — Джон Лі, використайте цю картку. Після того, як
+                                                Джон Лі отримує цю картку, він
+                                                застосовує навичку Кам’яний дощ: Ударний камінь одразу однократно.
+                                                Коли ваш активний персонаж захищений або має бойовий статус із Щитом, завдається 1 од.
+                                                Гео шкоди.
+                                            </p>
+                                            <p>(Цю картку можна додати в колоду, лише якщо в ній є Джон Лі.)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./image/zhongli/cards/card2-modal.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section-block-modal zhongli" id="modal3">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal zhongli">
+                            <div class="modal-block-left">
+                                <div class="block-modal zhongli">
+                                    <div class="modal-block">
+                                        <div class="modal-text-block">
+                                            <p class="one">Помічник</p>
+                                            <p>Фінальна фаза: завдає Гео шкоди, 2 од.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./image/zhongli/cards/card3.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section-block-modal zhongli" id="modal4">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal zhongli">
+                            <div class="modal-block-left">
+                                <div class="block-modal zhongli">
+                                    <div class="modal-block">
+                                        <div class="modal-text-block">
+                                            <p>Створює 3 Мультиелементних дайси.</p>
+                                            <p>
+                                                (Для додання цієї картки у свою колоду, вона має налічувати щонайменше 2 персонажів з Лі
+                                                Юе)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./image/zhongli/cards/card4-modal.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section-block-modal zhongli" id="modal5">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal zhongli">
+                            <div class="modal-block-left">
+                                <div class="block-modal zhongli">
+                                    <div class="modal-block">
+                                        <div class="modal-text-block">
+                                            <p>
+                                                Наступний раз, коли ваш персонаж завдасть Гео шкоди, можна отримати такі бонуси протягом
+                                                цього раунду: Якщо на вашій
+                                                стороні наявний хоч один бойовий статус, що надає щит, то такий статус наділяється 3
+                                                поділками щита.
+                                            </p>
+                                            <p>(Для додання цієї картки у свою колоду, вона має налічувати щонайменше 2 Гео персонажів).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./image/zhongli/cards/card5-modal.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section-block-modal zhongli" id="modal6">
+                    <div class="cards-section-block-modal-mini">
+                        <div class="modal zhongli">
+                            <div class="modal-block-left">
+                                <div class="block-modal zhongli">
+                                    <div class="modal-block">
+                                        <div class="modal-text-block">
+                                            <p>Створює 1 Гео дайс.</p>
+                                            <p>(Для додання цієї картки у свою колоду, вона має налічувати щонайменше 2 Гео персонажів).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./image/zhongli/cards/card6-modal.png" alt="картка" class="modal-card">
+                            <button class="close-btn" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- регіон -->
+            <section data-animate="fade-in" id="region-section">
+                <h3 class="zhongli-h3">регіон</h3>
+                <div class="region">
+                    <div data-animate="fade-in" class="region-section">
+                        <div class="region-section-block">
+                            <p class="region-section-p zhongli">Лі Юе</p>
+                            <div class="region-section-text">
+                                <p>
+                                    Багата гавань, що лежить на сході Тейвату. Гори стоять високі й горді поруч із кам’яним лісом, який разом із відкритими
+                                    рівнинами та жвавими річками складають пишний ландшафт Лі Юе, який демонструє свою унікальну красу у кожній з чотирьох
+                                    пір року. Скільки тільки дарів від гео Архонта підстерігають серед скель гір Лі Юе? Лі Юе - один із семи регіонів
+                                    Тейвату. Це місто-держава, яке поклоняється Мораксу, гео Архонту.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="./image/zhongli/region/region.png" alt="Лі юе">
+                    </div>
+                    <div data-animate="fade-in" class="region-map">
+                        <p class="region-p zhongli">Мапа регіону</p>
+                        <iframe width="1300px" height="500px" class="map"
+                            data-src="https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_id=2&utm_medium=tool&utm_source=hoyolab&bbs_theme=light&bbs_theme_device=1&lang=en-us#/map/2?shown_types=&center=-19.94,120.68&zoom=-0.50"
+                            loading="lazy" frameborder="0">
+                        </iframe>
+                    </div>
+                    <div data-animate="fade-in" class="region-music">
+                        <p class="region-p zhongli">Плейлист регіону</p>
+                        <div class="region-music-section">
+                            <p>Для більшого погруження у атмосферу регіону ви можете послухати плейліст з пісня.</p>
+                            <iframe width="1300px" height="500px" class="spotify"
+                                src="https://open.spotify.com/embed/album/22jmHd52fUk6hDe8S3Et0T?utm_source=generator" width="100%" height="380"
+                                frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./script/script.js"></script>
+    <script>
+        // Перевіряємо, чи попередня сторінка була "index"
+        if (sessionStorage.getItem("previousPage") === "index") {
+            const block = document.getElementById("myBlock");
+            block.classList.remove("hidden");
+
+            // Очищаємо попередню сторінку, щоб відео не відтворювалось при оновленні
+            sessionStorage.removeItem("previousPage");
+
+            // Затримка для плавного зникнення відео
+            const delayClass = 6450;
+            const delayAttribute = 7000;
+
+            setTimeout(() => {
+                block.classList.add('hidden');
+            }, delayClass);
+
+            setTimeout(() => {
+                block.style.display = 'none'; // Приховуємо блок повністю
+            }, delayAttribute);
+        }
+    </script>
+    <footer data-animate="fade-in" class="zhongli">
+        <div class="footer zhongli">
+            <div class="footer-section">
+                <div class="footer-first">
+                    <div class="footer-navigation">
+                        <nav class="footer-nav zhongli">
+                            <ul class="footer-nav-ul">
+                                <li><a href="#history-section">історія</a></li>
+                                <li><a href="#gameplay-section">геймплей</a></li>
+                                <li><a href="#ascensions-section">піднесення</a></li>
+                                <li><a href="#talents-section">таланти</a></li>
+                                <li><a href="#constellation-section">сузір'я</a></li>
+                                <li><a href="#cards-section">картки</a></li>
+                                <li><a href="#region-section">регіон</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a class="link-first zhongli" href="./autor.html">Про автора</a>
+                    <p class="footer-copyright zhongli">&copy; 2024 Дані захищені</p>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li>
+                            <a class="link" href="tel:+380665573816">+ 38 (066) 557 38 16</a>
+                        </li>
+                        <li>
+                            <a class="link" href="mailto:anna.lytvynova.pp.2023@lpnu.ua">anna.lytvynova.pp.2023@lpnu.ua</a>
+                        </li>
+                        <li>
+                            <a class="link" href="https://maps.app.goo.gl/qjgP1mHz5MEiXUup9" target="_blank">
+                                Україна, м. Львів,
+                                <br>вул. Степана Бандери 12
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/any.sh.ka/" target="_blank">
+                            <img src="./image/Instagram.svg" alt="інстаграм">
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://t.me/any_shka" target="_blank">
+                            <img src="./image/Telegram.svg" alt="телеграм">
+                            <p>Telegram</p>
+                        </a>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/profile.php?id=100022411786687&locale=uk_UA" target="_blank">
+                            <img src="./image/Facebook.svg" alt="фейсбук">
+                            <p>Facebook</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
